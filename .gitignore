@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+.idea
+.vscode
+.ipynb_checkpoints
+.DS_Store
+out
+node_modules

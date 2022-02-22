@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "cpld_tests"
+version = "0.1.0"
+description = ""
+authors = ["Rinke Hoekstra <r.hoekstra@elsevier.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rdflib = "*"
+ipykernel = "*"
+lxml = "*"
+rdflib-jsonld = "*"
+html5lib = "*"
+beautifulsoup4 = "*"
+pyld = "*"
+pyshacl = "*"
+owlrl = "*"
+html5validator = "*"
+pytidylib = "*"
+rfc3987 = "*"
+requests = "*"
+requests-file = "^1.5.1"
+pytest = "^6.2.5"
+tomli = "^1.2.2"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.10b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

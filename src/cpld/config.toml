@@ -1,0 +1,13 @@
+[html]
+validator = "tidy" # Can currently only be 'tidy'
+
+[html.tidy]
+input-xml = "true"
+doctype = "html5"
+output-xhtml = "true"
+show-warnings = "false"
+
+
+[log]
+filename = "cpld.log"
+level = "DEBUG"

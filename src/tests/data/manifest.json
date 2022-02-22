@@ -1,0 +1,123 @@
+[
+    {
+        "id": "1-html-docid",
+        "type": "RetrievalTest",
+        "description": "Extract document ID from HTML file",
+        "input": "1-html-docid-input.html",
+        "property": "docid",
+        "output": "1-html-docid-output.txt"
+    },
+    {
+        "id": "2-html-valid",
+        "type": "ComparisonTest",
+        "description": "Process valid HTML document, and know it's valid",
+        "input": "2-html-valid-input.html",
+        "html_output": "2-html-valid-output.html"
+    },
+    {
+        "id": "3-html-invalid",
+        "type": "NegativeTest",
+        "description": "Process invalid HTML document, and fail to initialize a document object",
+        "input": "3-html-invalid-input.html",
+        "raises": "InvalidHTMLStructureException"
+    },
+    {
+        "id": "3b-html-missing-head",
+        "type": "NegativeTest",
+        "description": "Process HTML document that does not contain a head, and fail to initialize a document object",
+        "input": "3b-html-missing-head-input.html",
+        "raises": "MissingHeadElementException"
+    },
+    {
+        "id": "3c-html-missing-dct",
+        "type": "NegativeTest",
+        "description": "Process HTML document that does not contain a link element to DCT, and fail to initialize a document object",
+        "input": "3c-html-missing-dct-input.html",
+        "raises": "MissingDCTSchemaDefinitionException"
+    },
+    {
+        "id": "3d-html-missing-conformsTo",
+        "type": "NegativeTest",
+        "description": "Process HTML document that does not contain dct:conformsTo to the CPLD schema, and fail to initialize a document object",
+        "input": "3d-html-missing-conformsTo-input.html",
+        "raises": "MissingConformsToException"
+    },
+    {
+        "id": "4a-html-missing-document-id",
+        "type": "NegativeTest",
+        "description": "Process HTML document with missing document id, and fail to initialize a document object",
+        "input": "4-html-missing-document-id-input.html",
+        "raises": "MissingDocumentIRIException"
+    },
+    {
+        "id": "4b-html-multiple-document-ids",
+        "type": "NegativeTest",
+        "description": "Process HTML document with more than one document id, and fail to initialize a document object",
+        "input": "4b-html-multiple-document-ids-input.html",
+        "raises": "MultipleDocumentIRIsException"
+    },
+    {
+        "id": "4c-html-invalid-document-id",
+        "type": "NegativeTest",
+        "description": "Process HTML document with invalid document id (no IRI), and fail to initialize a document object",
+        "input": "4c-html-invalid-document-id-input.html",
+        "raises": "InvalidDocumentIRIException"
+    },
+    {
+        "id": "4e-html-invalid-hash-document-id",
+        "type": "NegativeTest",
+        "description": "Process HTML document with document id that ends with a hash character (#) and fail to initialize a document object",
+        "input": "4e-html-invalid-hash-document-id-input.html",
+        "raises": "InvalidHashDocumentIRIException"
+    },
+    {
+        "id": "5a-html-missing-xml-base",
+        "type": "NegativeTest",
+        "description": "Process HTML document with missing xml:base on html root, and fail to initialize a document object",
+        "input": "5a-html-missing-xml-base-input.html",
+        "raises": "MissingXMLBaseException"
+    },
+    {
+        "id": "5b-html-xml-base-mismatch",
+        "type": "NegativeTest",
+        "description": "Process HTML document with xml:base that does not match the document iri, and fail to initialize a document object",
+        "input": "5b-html-xml-base-mismatch-input.html",
+        "raises": "XMLBaseMismatchException"
+    },
+    {
+        "id": "6a-jsonld-no-jsonld-found",
+        "type": "NegativeTest",
+        "description": "Process HTML document without any embedded or linked JSON-LD, and fail to initialize a document object",
+        "input": "6a-jsonld-no-jsonld-found-input.html",
+        "raises": "NoJSONLDFoundException"
+    },
+    {
+        "id": "6b-jsonld-no-quads-found",
+        "type": "NegativeTest",
+        "description": "Process HTML document where embedded JSON-LD does not contain any RDF, and fail to initialize a document object",
+        "input": "6b-jsonld-no-quads-found-input.html",
+        "raises": "NoQuadsFoundException"
+    },
+    {
+        "id": "6c-jsonld-no-statements-about-document-id-found",
+        "type": "NegativeTest",
+        "description": "Process HTML document where embedded JSON-LD does not contain any statements about the Document IRI, and fail to initialize a document object",
+        "input": "6c-jsonld-no-statements-about-document-id-found-input.html",
+        "raises": "NoStatementsAboutDocumentIRIException"
+    },
+    {
+        "id": "6d-jsonld-invalid-embedded-json-input",
+        "type": "NegativeTest",
+        "description": "Process HTML document where embedded JSON-LD is not valid JSON and fail",
+        "input": "6d-jsonld-invalid-embedded-json-input.html",
+        "raises": "InvalidEmbeddedJSONFoundException"
+    },
+    {
+        "id": "6e-jsonld-invalid-linked-local-json-input",
+        "type": "NegativeTest",
+        "description": "Process HTML document where linked local JSON-LD is not valid JSON and fail",
+        "input": "6e-jsonld-invalid-linked-local-json-input.html",
+        "support": ["6e-jsonld-invalid-linked-local-json-input.jsonld"],
+        "raises": "InvalidRemoteJSONFoundException"
+    }
+]
