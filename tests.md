@@ -31,6 +31,36 @@
 raises: `InvalidHTMLStructureException`
 
  input: [3-html-invalid-input.html](src/tests/data/3-html-invalid-input.html)
+## 3b-html-missing-head
+### NegativeTest
+
+*Process HTML document that does not contain a head, and fail to initialize a document object*
+
+    
+
+raises: `MissingHeadElementException`
+
+ input: [3b-html-missing-head-input.html](src/tests/data/3b-html-missing-head-input.html)
+## 3c-html-missing-dct
+### NegativeTest
+
+*Process HTML document that does not contain a link element to DCT, and fail to initialize a document object*
+
+    
+
+raises: `MissingDCTSchemaDefinitionException`
+
+ input: [3c-html-missing-dct-input.html](src/tests/data/3c-html-missing-dct-input.html)
+## 3d-html-missing-conformsTo
+### NegativeTest
+
+*Process HTML document that does not contain dct:conformsTo to the CPLD schema, and fail to initialize a document object*
+
+    
+
+raises: `MissingConformsToException`
+
+ input: [3d-html-missing-conformsTo-input.html](src/tests/data/3d-html-missing-conformsTo-input.html)
 ## 4a-html-missing-document-id
 ### NegativeTest
 
@@ -61,16 +91,6 @@ raises: `MultipleDocumentIRIsException`
 raises: `InvalidDocumentIRIException`
 
  input: [4c-html-invalid-document-id-input.html](src/tests/data/4c-html-invalid-document-id-input.html)
-## 4d-html-invalid-elsevier-linked-data-document-id
-### NegativeTest
-
-*Process HTML document with document id that does not conform to Elsevier Linked Data and fail to initialize a document object*
-
-    
-
-raises: `InvalidElsevierLinkedDataDocumentIRIException`
-
- input: [4d-html-invalid-elsevier-linked-data-document-id-input.html](src/tests/data/4d-html-invalid-elsevier-linked-data-document-id-input.html)
 ## 4e-html-invalid-hash-document-id
 ### NegativeTest
 
@@ -131,3 +151,23 @@ raises: `NoQuadsFoundException`
 raises: `NoStatementsAboutDocumentIRIException`
 
  input: [6c-jsonld-no-statements-about-document-id-found-input.html](src/tests/data/6c-jsonld-no-statements-about-document-id-found-input.html)
+## 6d-jsonld-invalid-embedded-json-input
+### NegativeTest
+
+*Process HTML document where embedded JSON-LD is not valid JSON and fail*
+
+    
+
+raises: `InvalidEmbeddedJSONFoundException`
+
+ input: [6d-jsonld-invalid-embedded-json-input.html](src/tests/data/6d-jsonld-invalid-embedded-json-input.html)
+## 6e-jsonld-invalid-linked-local-json-input
+### NegativeTest
+
+*Process HTML document where linked local JSON-LD is not valid JSON and fail*
+
+    
+
+raises: `InvalidRemoteJSONFoundException`
+
+ input: [6e-jsonld-invalid-linked-local-json-input.html](src/tests/data/6e-jsonld-invalid-linked-local-json-input.html)
