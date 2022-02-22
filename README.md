@@ -8,7 +8,7 @@ First, you'll have to use `poetry` to install required packages:
 
 `poetry install`
 
-Then you can change into the `src` directory and run `pytest`:
+Then you can run `pytest` through `poetry`:
 
 `poetry run pytest` (use `-v` or `-vv` to get more verbose output)
 
