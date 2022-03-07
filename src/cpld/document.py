@@ -130,7 +130,6 @@ class Document(object):
             raise NoJSONLDFoundException()
 
         self._load_jsonld(jsonld_data)
-
         self._validate_dataset()
 
     def _document_iri_from_html(self):
@@ -160,6 +159,43 @@ class Document(object):
 
         return document_iri
 
+    def _load_referenced_jsonld(self, referenced_jsonld_file):
+        try:
+            # If it's a valid IRI, we'll use it as URL for retrieving the data.
+            rfc3987_parse(referenced_jsonld_file)
+
+            referenced_jsonld_url = referenced_jsonld_file
+            if referenced_jsonld_file.startswith("http"):
+                referenced_jsonld_url = referenced_jsonld_file
+            elif referenced_jsonld_file.startswith("file"):
+                referenced_jsonld_url = referenced_jsonld_file
+            else:
+                raise Exception("This is not a retrievable URI")
+        except:
+            # It is not a valid IRI, but most likely a relative reference to a local file.
+            if os.path.isabs(referenced_jsonld_file):
+                # Absolute path... turn into URL
+                referenced_jsonld_url = f"file://{referenced_jsonld_file}"
+            else:
+                # Relative path... turn into URL (relative to the HTML file)
+
+                if "_base_folder" in self.__dict__:
+                    referenced_jsonld_url = f"file://{os.path.join(os.path.abspath(self._base_folder), referenced_jsonld_file)}"
+                else:
+                    # this document is created from data, using the current dir to create an absolute path
+                    referenced_jsonld_url = f"file://{os.path.join(os.path.abspath(os.curdir), referenced_jsonld_file)}"
+        
+        response = requests_session.get(referenced_jsonld_url)
+
+        try:
+            if response.ok:
+                return response.json()
+            else:
+                log.debug(response.content)
+                raise CouldNotRetrieveReferencedJSONException()
+        except JSONDecodeError as e:
+            raise InvalidRemoteJSONFoundException() from e
+
     def _extract_jsonld(self):
         jsonld_data = []
         # Load embedded JSON-LD
@@ -178,49 +214,22 @@ class Document(object):
         for jsonld_tag in self._soup.find_all(
             "link", attrs={"type": "application/ld+json"}
         ):
-            referenced_jsonld_file = jsonld_tag["href"]
-
-            try:
-                # If it's a valid IRI, we'll use it as URL for retrieving the data.
-                rfc3987_parse(referenced_jsonld_file)
-
-                referenced_jsonld_url = referenced_jsonld_file
-                if referenced_jsonld_file.startswith("http"):
-                    referenced_jsonld_url = referenced_jsonld_file
-                elif referenced_jsonld_file.startswith("file"):
-                    referenced_jsonld_url = referenced_jsonld_file
-                else:
-                    raise Exception("This is not a retrievable URI")
-            except:
-                # It is not a valid IRI, but most likely a relative reference to a local file.
-                if os.path.isabs(referenced_jsonld_file):
-                    # Absolute path... turn into URL
-                    referenced_jsonld_url = f"file://{referenced_jsonld_file}"
-                else:
-                    # Relative path... turn into URL (relative to the HTML file)
-
-                    if "_base_folder" in self.__dict__:
-                        referenced_jsonld_url = f"file://{os.path.join(os.path.abspath(self._base_folder), referenced_jsonld_file)}"
-                    else:
-                        # this document is created from data, using the current dir to create an absolute path
-                        referenced_jsonld_url = f"file://{os.path.join(os.path.abspath(os.curdir), referenced_jsonld_file)}"
-
-            response = requests_session.get(referenced_jsonld_url)
-
-            try:
-                if response.ok:
-                    jsonld_data.append(response.json())
-                else:
-                    log.debug(response.content)
-                    raise CouldNotRetrieveReferencedJSONException()
-            except JSONDecodeError as e:
-                raise InvalidRemoteJSONFoundException() from e
-
+            jsonld_data.append(self._load_referenced_jsonld(jsonld_tag["href"]))
 
         return jsonld_data
 
 
     def _load_jsonld(self, jsonld_data):
+        for jsonld_element in jsonld_data:
+            if isinstance(jsonld_element.get('@context'), list):
+                context = {}
+                for context_element in jsonld_element.get('@context'):
+                    if isinstance(context_element, str):
+                        context.update(self._load_referenced_jsonld(context_element).get('@context'))
+                    elif isinstance(context_element, dict):
+                        context.update(context_element)
+                jsonld_element['@context'] = context
+
         try:
             nquads = jsonld.to_rdf(jsonld_data, {'format': 'application/n-quads'})
         except Exception as e:

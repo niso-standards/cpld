@@ -14,7 +14,7 @@ RETRIEVAL_TEST = "RetrievalTest"
 
 def read_file(filename):
     with open(os.path.join(DATA_DIR, filename), 'r') as f:
-        return f.read()
+        return f.read().strip()
 
 def load_cases():
     with open(os.path.join(DATA_DIR, MANIFEST_FILE),"rb") as f:

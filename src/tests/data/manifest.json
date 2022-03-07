@@ -119,5 +119,13 @@
         "input": "6e-jsonld-invalid-linked-local-json-input.html",
         "support": ["6e-jsonld-invalid-linked-local-json-input.jsonld"],
         "raises": "InvalidRemoteJSONFoundException"
+    },
+    {
+        "id": "examples-1-basic-article-docid",
+        "type": "RetrievalTest",
+        "description": "Extract document ID from example basic article",
+        "input": "cpld-niso.html",
+        "property": "docid",
+        "output": "cpld-niso-docid.txt"
     }
 ]
