@@ -1,0 +1,252 @@
+{
+    "@context": ["cpld-niso-context.jsonld", "includes/anno_slim.jsonld", { "doc": "https://cpld.example.com/document/1a2b3c#" } ],
+    "id": "https://cpld.example.com/document/1a2b3c",
+    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "type": "schema:Article",
+    "schema:title": "A description of approachable magicians: An exploratory study, the voice of the elevated elf",
+    "rights": "Elsevier Inc.",
+    "keyword": ["approachable", "magicians", "elevated elf", "pastafari, communication"],
+    "hasPart": [
+        {
+            "id": "doc:seg0010",
+            "type": "Title"
+        },        
+        {
+            "id": "doc:ab0005",
+            "type": "Abstract"
+        },
+        {
+            "id": "doc:as0005",
+            "type": "Introduction"
+        },
+        {
+            "id": "doc:as0010",
+            "type": "Materials"
+        },
+        {
+            "id": "doc:as0015",
+            "type": "Results"
+        },
+        {
+            "id": "doc:as0020",
+            "type": "Conclusion"
+        },
+        {
+            "id": "doc:blk0005",
+            "type": "Byline"
+        },
+        {
+            "id": "doc:au0005",
+            "type": "AuthorName",
+            "mentions": "person:pb5498a"
+        },
+        {
+            "id": "doc:au0010",
+            "type": "AuthorName",
+            "mentions": "person:p6eebfb"
+        },
+        {
+            "id": "doc:aff0005",
+            "type": "Affiliation",
+            "mentions": "organization:oba882f"
+        },
+        {
+            "id": "doc:aff0010",
+            "type": "Affiliation",
+            "mentions": "organization:o1c9b4c"
+        },
+        {
+            "id": "doc:ks0005",
+            "type": "Keywords"
+        },
+        {
+            "id": "doc:kw0005",
+            "type": "Keyword"
+        },
+        {
+            "id": "doc:kw0010",
+            "type": "Keyword"
+        },
+        {
+            "id": "doc:kw0015",
+            "type": "Keyword"
+        },
+        {
+            "id": "doc:kw0020",
+            "type": "Keyword"
+        },
+        {
+            "id": "doc:s0005",
+            "type": "Introduction"
+        },
+        {
+            "id": "doc:s0010",
+            "type": "Method"
+        },
+        {
+            "id": "doc:s0070",
+            "type": "Discussion"
+        },
+        {
+            "id": "doc:s0075",
+            "type": "Evaluation"
+        },
+        {
+            "id": "doc:s0090",
+            "type": "Conclusion"
+        },
+        {
+            "id": "doc:s0095",
+            "type": "Acknowledgment"
+        },
+        {
+            "id": "doc:s0110",
+            "type": "References"
+        },
+        {
+            "id": "doc:bb0005",
+            "type": "Reference"
+        },
+        {
+            "id": "doc:bb010",
+            "type": "Reference",
+            "renditionOf": "work:gyft45",
+            "mentions": [
+                "person:pb5498a",
+                "person:p6eebfg",
+                "person:p6eebfc"
+            ]
+        },
+        {
+            "id": "doc:bb0025",
+            "type": "Reference"
+        },
+        {
+            "id": "doc:bb0035",
+            "type": "Reference"
+        },
+        {
+            "id": "doc:cf1215",
+            "type": "Citation",
+            "mentions": "work:gyft45"
+        },
+        {
+            "id": "doc:cf0040",
+            "type": "Citation"
+        },
+        {
+            "id": "doc:cf0045",
+            "type": "Citation"
+        }
+    ],
+    "schema:author": [
+        {
+            "id": "person:pb5498a",
+            "type": "schema:Person",
+            "identifier": {
+                "type": "identifier:ORCID",
+                "value": "0000-0003-2739-1921"
+            },
+            "sameAs": "doc:b5498a300eb5932ad31d0aafcf1d6561",
+            "schema:email": "beilar.cranorin@tismec.edu",
+            "schema:givenName": "Beilar J.",
+            "initials": "B.J.",
+            "schema:familyName": "Cranorin",
+            "schema:honorificSuffix": [
+                "RN",
+                "PhD"
+            ],
+            "schema:name": "Beilar J. Cranorin",
+            "schema:affiliation": {
+                "id": "organization:oba882f",
+                "identifier": {
+                    "type": "identifier:ECR",
+                    "value": "ECR-10365836"
+                },
+                "sameAs": "doc:ba882fa43c872398e1d54b0715499c66",
+                "type": "Organization",
+                "schema:name": "Hermeneutic School of Magic, Tropical Island College @ Tropical Island Space Magic Education Center",
+                "schema:address": {
+                    "schema:streetAddress": "350 Wand Alley",
+                    "postalCode": "90210",
+                    "schema:addressRegion": "Tropical Island",
+                    "schema:addressCountry": "United States",
+                    "schema:addressLocality": "Providence"
+                }
+            }
+        },
+        {
+            "id": "person:p6eebfb",
+            "type": "schema:Person",
+            "identifier": {
+                "type": "identifier:ORCID",
+                "value": "0000-0002-1339-2454"
+            },
+            "sameAs": "doc:6eebfbc2b459ccaba7271bd524eb76f3",
+            "schema:givenName": "Deulara",
+            "initials": "D.",
+            "schema:familyName": "Sarsalor",
+            "schema:honorificSuffix": [
+                "RN",
+                "PhD"
+            ],
+            "schema:name": "Deulara Sarsalor",
+            "schema:affiliation": {
+                "id": "organization:o1c9b4c",
+                "identifier": {
+                    "type": "identifier:ECR",
+                    "value": "ECR-10330785"
+                },
+                "sameAs": "doc:1c9b4c186cf5337ac116cc2d248df3b5",
+                "type": "Organization",
+                "schema:name": "Space Magic Academy, University of Tropical Island",
+                "schema:address": {
+                    "preferredLabel": "Space Magic Academy University of Tropical Island",
+                    "schema:streetAddress": "39 Pastabowl Road",
+                    "postalCode": "01209",
+                    "schema:addressRegion": "Tropical Island",
+                    "schema:addressCountry": "United States",
+                    "schema:addressLocality": "Kingston"
+                }
+            }
+        }
+    ],
+    "schema:citation": [
+        {
+            "id": "work:gyft45",
+            "type": "Article",
+            "identifier": {
+                "type": "identifier:DOI",
+                "value": "99.x637277b/112233493517690454"
+            },
+            "schema:title": "School-age elves' perception of the elevator experience",
+            "sameAs": "doc:161b2168513c46d6cca50d5955d6289d",
+            "schema:author": [
+                {
+                    "id": "person:pb5498a",
+                    "sameAs": "doc:ba882fa43c872398e1d54b0715499c66",
+                    "type": "schema:Person",
+                    "initials": "H.",
+                    "schema:familyName": "Balsandoral",
+                    "schema:name": "Balsandoral, H."
+                },
+                {
+                    "id": "person:p6eebfg",
+                    "sameAs": "doc:926b5fec63b2f8688fdc32b2b1503059",
+                    "type": "schema:Person",
+                    "initials": "S.",
+                    "schema:familyName": "Loravaris",
+                    "schema:name": "Loravaris, S."
+                },
+                {
+                    "id": "person:p6eebfc",
+                    "sameAs": "doc:039de66157e0405a53eeb7468b22ace8",
+                    "type": "schema:Person",
+                    "initials": "A.",
+                    "schema:familyName": "Adxisys",
+                    "schema:name": "Adxisys, A."
+                }
+            ]
+        }
+    ]
+}
