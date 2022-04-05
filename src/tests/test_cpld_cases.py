@@ -33,7 +33,7 @@ def load_cases():
 
 
 def filter_comparison_cases(cases):
-    return [case for case in cases if case['type'] == COMPARISON_TEST and 'input' in case and 'html_output' in case or 'jsonld_output' in case]
+    return [case for case in cases if case['type'] == COMPARISON_TEST and 'input' in case and ('html_output' in case or 'jsonld_output' in case)]
 
 def filter_negative_cases(cases):
     return [case for case in cases if case['type'] == NEGATIVE_TEST and 'input' in case]
