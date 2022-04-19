@@ -1,0 +1,247 @@
+{
+    "@context": 
+        {
+        "@version": 1.1,
+        "pav": "http://purl.org/pav/",
+        "prov": "http://www.w3.org/ns/prov#",
+        "oa": "http://www.w3.org/ns/oa#",
+        "dct": "http://purl.org/dc/terms/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "html": "http://www.w3.org/1999/xhtml#",
+
+        "cpld": "https://cpld.example.com/schema/cpld/",
+
+        "nas": "https://cpld.example.com/publishing/schema/nas/",
+        "service": "https://cpld.example.com/research/service/",
+
+
+
+        "organization": "https://cpld.example.com/thing/Organization/",
+        "person": "https://cpld.example.com/thing/Person/",
+        "work": "https://cpld.example.com/thing/Work/",
+        
+
+        "@vocab": "https://cpld.example.com/schema/cpld/",
+        "@language": "en",
+        
+        "sameAs": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2002/07/owl#sameAs"
+        },
+        "id": {
+            "@type": "@id",
+            "@id": "@id"
+        },
+        "type": {
+            "@type": "@id",
+            "@id": "@type"
+        },
+        "value": {
+            "@id": "@value"
+        },
+        "language": {
+            "@id": "@language"
+        },
+        "graph": "@graph",
+        "Byline": {
+            "@id": "nas:Byline",
+            "@type": "@id"
+        },
+        
+        "AuthorName": {
+            "@id": "nas:AuthorName",
+            "@type": "@id"
+        },
+        "CorrespondingAuthorName": {
+            "@id": "nas:CorrespondingAuthorName",
+            "@type": "@id"
+        },
+        "Affiliation": {
+            "@id": "nas:Affiliation",
+            "@type": "@id"
+        },
+        "Abstract": {
+            "@id": "nas:Abstract",
+            "@type": "@id"
+        },
+        "Title": {
+            "@id": "nas:Title",
+            "@type": "@id"
+        },
+        "Introduction": {
+            "@id": "nas:Introduction",
+            "@type": "@id"
+        },
+        "Conclusion": {
+            "@id": "nas:Conclusion",
+            "@type": "@id"
+        },
+        "Keyword": {
+            "@id": "nas:Keyword",
+            "@type": "@id"
+        },
+        "Keywords": {
+            "@id": "nas:Keywords",
+            "@type": "@id"
+        },
+        "Highlights": {
+            "@id": "nas:Highlights",
+            "@type": "@id"
+        },
+        "Acknowledgement": {
+            "@id": "nas:Acknowledgement",
+            "@type": "@id"
+        },
+        "Materials": {
+            "@id": "nas:Materials",
+            "@type": "@id"
+        },
+        "Method": {
+            "@id": "nas:Method",
+            "@type": "@id"
+        },
+        "Evaluation": {
+            "@id": "nas:Evaluation",
+            "@type": "@id"
+        },
+        "Results": {
+            "@id": "nas:Results",
+            "@type": "@id"
+        },
+        "References": {
+            "@id": "nas:References",
+            "@type": "@id"
+        },
+        "Citation": {
+            "@id": "nas:Citation",
+            "@type": "@id"
+        },
+        "Reference": {
+            "@id": "nas:Reference",
+            "@type": "@id"
+        },
+        "EditorHighlights": {
+            "@id": "nas:EditorHighlights",
+            "@type": "@id"
+        },
+        "PII": "identifier:PII",
+        "ECR": "identifier:ECR",
+        "DOI": "identifier:DOI",
+        "JID": "identifier:JID",
+        "Organization": "schema:Organization",
+        "Person": "schema:Person",
+
+        "annotations": "@graph",
+        
+        "AnnotationSet": "cpld:AnnotationSet",
+        "Annotation": "oa:Annotation",
+        "StructureAnnotation": "cpld:StructureAnnotation",
+        "SyntaxAnnotation": "cpld:SyntaxAnnotation",
+        "NarrativeAnnotation": "cpld:NarrativeAnnotation",
+        "SemanticAnnotation": "cpld:SemanticAnnotation",
+
+
+        "hasPart": {
+            "@id": "schema:hasPart",
+            "@type": "@id"
+        },
+        
+        "identifier": {
+            "@id": "cpld:identifier",
+            "@type": "cpld:idtype"
+        },
+        "cpld:hasParticipant": {
+            "@type": "@id"
+        },
+        "cpld:includedIn": {
+            "@type": "@id"
+        },
+        "conformsTo": {
+            "@id": "dct:conformsTo",
+            "@type": "xsd:anyURI"
+        },
+        "rights": {
+            "@type": "@id",
+            "@id": "dct:rights"
+        },
+        "createdWith": {
+            "@type": "@id",
+            "@id": "pav:createdWith"
+        },
+        "derivedFrom": {
+            "@type": "@id",
+            "@id": "pav:derivedFrom"
+        },
+        "lastUpdatedOn": {
+            "@type": "@id",
+            "@id": "pav:lastUpdateOn"
+        },
+        "previousVersion": {
+            "@type": "@id",
+            "@id": "pav:previousVersion"
+        },
+        "providedBy": {
+            "@type": "@id",
+            "@id": "pav:providedBy"
+        },
+        "version": {
+            "@type": "@id",
+            "@id": "pav:version"
+        },
+        "confidence": {
+            "@type": "@id",
+            "@id": "cpld:confidence"
+        },
+        "predicate": {
+            "@type": "@vocab",
+            "@id": "rdf:predicate"
+        },
+        "annotatedBy": {
+            "@type": "@id",
+            "@id": "cpld:annotatedBy"
+        },
+        "isElement": {
+            "@type": "@id",
+            "@id": "cpld:isElement"
+        },
+        "syntax": {
+            "@type": "@id",
+            "@id": "cpld:hasSyntax"
+        },
+        "narrativeRole": {
+            "@type": "@id",
+            "@id": "cpld:hasNarrativeRole"
+        },
+        "renders": {
+            "@type": "@id",
+            "@id": "cpld:renditionOf"
+        },
+        "mentions": {
+            "@type": "@id",
+            "@id": "cpld:mentions"
+        },
+        "about": {
+            "@type": "@id",
+            "@id": "cpld:hasSubject"
+        },
+        "expresses": {
+            "@type": "@id",
+            "@id": "cpld:expresses"
+        },
+        "provenance": {
+            "@type": "@id",
+            "@id": "prov:has_provenance"
+        },
+        "sentence": "cpld:sentence",
+        "word": "cpld:word",
+        "NP": "cpld:nounPhrase",
+        "noun": "cpld:noun",
+        "keyword": "cpld:keyword"
+    }
+}

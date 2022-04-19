@@ -1,0 +1,141 @@
+{
+  "@context": {
+      "cpld": "https://cpld.example.com/schema/cpld/",
+      "schema": "https://schema.org/",
+      "sh": "http://www.w3.org/ns/shacl#",
+      "dct": "http://purl.org/dc/terms/",
+      "oa": "http://www.w3.org/ns/oa#",
+      "html": "http://www.w3.org/1999/xhtml#",
+
+      "id": "@id",
+      "type": "@type",
+
+      "conformsTo": "dct:conformsTo",
+      "shapesGraph": {
+        "@id": "sh:shapesGraph",
+        "@type": "@id"
+      }
+  },
+  "@graph": {
+    "@context": {
+      "@language": "en",
+
+      "pav": "http://purl.org/pav/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "sh": "http://www.w3.org/ns/shacl#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+
+      "owl:sameAs": { "@type": "@id" },
+      "owl:imports": { "@type": "@id" },
+
+      "rdfs:domain": { "@type": "@id" },
+      "rdfs:range": { "@type": "@id" },
+
+      "sh:shapesGraph": { "@type": "@id" },
+      "sh:targetClass": { "@type": "@id"},
+      "sh:path": { "@type": "@id" },
+      "sh:node": { "@type": "@id" },
+      "sh:nodeKind": { "@type": "@id" },
+      "sh:class": { "@type": "@id" },
+      "sh:datatype": { "@type": "@id" },
+      "sh:property": { "@type": "@id" },
+      "sh:or": {"@container": "@list"},
+
+      "schema:hasPart": {
+        "@type": "@id"
+      },
+      "schema:hasAuthor": {
+        "@type": "@id"
+      },
+
+      "id": "@id",
+      "type": "@type",
+      "conformsTo": "dct:conformsTo"
+    },
+    "@id": "https://cpld.example.com/schema/cpld/",
+    "@graph": [
+      {
+        "@id": "cpld:",
+        "@type": "owl:Ontology",
+        "dc:creator": "Rinke Hoekstra",
+        "dct:description": "The CPLD ontology defines constraints for documents that conform to the Content Profiles and Linked Document standard. These constraints are largely expressed against entity types defined in Schema.org",
+        "dct:created": "2020-02-17",
+        "rdfs:label": "Linked Document",
+        "owl:versionInfo": "v1.0",
+        "dcat:theme": "Architecture",
+        "vann:preferredNamespaceUri": "https://cpld.example.com/schema/cpld/",
+        "vann:preferredNamespacePrefix": "cpld",
+        "owl:imports": "schema:"
+      },
+      {
+        "@id": "dct:conformsTo",
+        "rdfs:label": "conformsTo",
+        "@type": "owl:DatatypeProperty",
+        "rdfs:description": "Indicates that a document conforms to some specification without assuming an automated mechanism for validating the conformance. For instance, the cpld:conformsTo relation may point at a Web page that describes the specification in natural language.",
+        "rdfs:range": "xsd:anyURI"
+      },
+      {
+        "@id": "cpld:ArticleShape",
+        "@type": "sh:NodeShape",
+        "sh:targetClass": ["schema:Article", "schema:ClinicalOverview"],
+        "sh:property": [
+          {
+          "@type": "sh:PropertyShape",
+          "sh:path": "dct:conformsTo",
+          "sh:datatype": "xsd:anyURI"
+          },
+          {
+          "@type": "sh:PropertyShape",
+          "sh:path": "sh:shapesGraph",
+          "sh:nodeKind": "sh:IRI"
+          },
+          {
+          "@type": "sh:PropertyShape",
+          "sh:path": "dct:creator",
+          "sh:minCount": 1,
+          "sh:or": [{"sh:datatype": "xsd:string"}, {"sh:nodeKind": "sh:IRI"}]
+          },
+          {
+          "@type": "sh:PropertyShape",
+          "sh:path": "pav:createdOn",
+          "sh:minCount": 1,
+          "sh:datatype": "xsd:date"
+          },
+          {
+          "@type": "sh:PropertyShape",
+          "sh:path": "schema:copyrightYear",
+          "sh:minCount": 1,
+          "sh:datatype": "xsd:date"
+          },
+          {
+          "@type": "sh:PropertyShape",
+          "sh:path": "schema:copyrightLine",
+          "sh:minCount": 1,
+          "sh:datatype": "xsd:string"
+          },
+          {
+          "@type": "sh:PropertyShape",
+          "sh:path": "schema:hasAuthor",
+          "sh:class": "schema:Person"
+          },
+          {
+          "@type": "sh:PropertyShape",
+          "sh:path": "schema:hasPart",
+          "sh:node": "cpld:PartShape"
+          }
+        ]
+      },
+      {
+        "@id": "cpld:PartShape",
+        "@type": "sh:NodeShape",
+        "rdfs:comment": "No document part may be further subdivided",
+        "sh:not": {
+          "@type": "sh:PropertyShape",
+          "sh:path": "schema:hasPart",
+          "sh:minCount": 1
+        }
+      }
+    ]
+  }
+}
