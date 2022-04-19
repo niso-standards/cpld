@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN" "JATS-journalpublishing1.dtd">
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0/"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article"
+    dtd-version="1.1" xml:lang="en">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">IOPP</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">The Example Journal</journal-title>
+                <abbrev-journal-title abbrev-type="IOP" xml:lang="en">IOPP</abbrev-journal-title>
+                <abbrev-journal-title abbrev-type="publisher" xml:lang="en"
+                    >IOPP</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">0000-0000</issn>
+            <issn pub-type="epub">0000-0000</issn>
+            <publisher>
+                <publisher-name>IOP Publishing</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="publisher-id">iop1</article-id>
+            <article-id pub-id-type="doi">10.1088/0000-0000/IOP1</article-id>
+            <title-group>
+                <article-title>Example Data Linking Article</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" corresp="yes" xlink:type="simple">
+                    <contrib-id contrib-id-type="orcid">0000-0000-0000-0001</contrib-id>
+                    <name name-style="western">
+                        <surname>Bloggs</surname>
+                        <given-names>Joe</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="affiliation01">1</xref>
+                    <email>joe.bloggs@email.com</email>
+                </contrib>
+                <aff id="affiliation01">
+                    <label>1</label>National Research</aff>
+            </contrib-group>
+            <pub-date pub-type="ppub">
+                <month>10</month>
+                <year>2021</year>
+            </pub-date>
+            <volume>1</volume>
+            <issue>1</issue>
+            <elocation-id content-type="artnum">1</elocation-id>
+            <abstract>
+                <title>Abstract</title>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus augue in
+                    lorem rhoncus maximus. Suspendisse euismod ornare turpis nec rhoncus. In hac
+                    habitasse platea dictumst. Nam ac leo eget tellus cursus euismod. Sed dignissim
+                    est nec diam vehicula eleifend. Aenean euismod quam enim, et ullamcorper quam
+                    efficitur eu. Maecenas id metus a dui hendrerit tempor tincidunt eget velit.
+                    Donec vel nibh sit amet nisi accumsan vehicula id in metus. Maecenas ut neque
+                    porttitor quam ultrices consectetur. Vivamus congue ipsum sem. Donec vitae nulla
+                    iaculis, sollicitudin sem vitae, efficitur dui. Proin vitae leo a tortor
+                    ultrices convallis a at tellus. Etiam dolor nisi, laoreet ut metus eget, porta
+                    ornare dolor. Donec tempor, erat non cursus pharetra, felis justo luctus leo, ac
+                    vestibulum quam mauris sed magna.</p>
+            </abstract>
+            <funding-group>
+                <award-group xlink:type="simple">
+                    <funding-source xlink:type="simple">NSF ∣ National Science Board
+                            (NSB)<named-content content-type="funder-id" xlink:type="simple"
+                            >https://doi.org/10.13039/100005716</named-content>
+                    </funding-source>
+                    <award-id>00000</award-id>
+                </award-group>
+            </funding-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec id="s1">
+            <label>1.</label>
+            <title>Introduction</title>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus augue in
+                lorem rhoncus maximus. Suspendisse euismod ornare turpis nec rhoncus. In hac
+                habitasse platea dictumst. Nam ac leo eget tellus cursus euismod. Sed dignissim est
+                nec diam vehicula eleifend. Aenean euismod quam enim, et ullamcorper quam efficitur
+                eu. Maecenas id metus a dui hendrerit tempor tincidunt eget velit. Donec vel nibh
+                sit amet nisi accumsan vehicula id in metus. Maecenas ut neque porttitor quam
+                ultrices consectetur. Vivamus congue ipsum sem. Donec vitae nulla iaculis,
+                sollicitudin sem vitae, efficitur dui. Proin vitae leo a tortor ultrices convallis a
+                at tellus. Etiam dolor nisi, laoreet ut metus eget, porta ornare dolor. Donec
+                tempor, erat non cursus pharetra, felis justo luctus leo, ac vestibulum quam mauris
+                sed magna.</p>
+        </sec>
+        <sec id="s2">
+            <label>2.</label>
+            <title>Observations and Analysis</title>
+            <p>Ut sed ligula vel quam tempor mollis. Phasellus egestas tellus ut mollis tempor.
+                Aliquam posuere sit amet ex fringilla porta. Vestibulum ornare risus est, faucibus
+                sagittis ligula aliquam sagittis. Praesent id mauris non massa fringilla
+                pellentesque eu ut erat. Nullam eget arcu ornare, tempor odio vitae, tempus quam. In
+                a vulputate lacus, quis consectetur tortor. Vivamus blandit gravida nunc, nec
+                pulvinar lacus. Phasellus tincidunt ultricies dolor, eget pretium ante varius id.
+                Donec laoreet ac sem eu dapibus. Fusce mattis pharetra lacus, ac luctus odio
+                venenatis et. Duis id justo enim. Phasellus facilisis sem finibus mattis hendrerit.
+                Curabitur sit amet orci orci. Cras vehicula lectus ut leo volutpat, ut ultrices quam
+                dapibus.</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <p>This research makes use of version 0.9.5 (Mumford et al. <xref ref-type="bibr"
+                    rid="R1">2018</xref>) of sunpy, an open-source and free community-developed
+                solar data analysis package written in Python (The SunPy Community et al. <xref
+                    ref-type="bibr" rid="R2">2020</xref>). We use v0.9.5 in this work, to maintain
+                consistency with the software environment used in Paper <xref ref-type="bibr"
+                    rid="R3">I</xref> which was completed prior to the v1.0 release of sunpy. S.J.B.
+                and W.T.B. were supported by the NSF through CAREER award AGS-1450230. W.T.B. was
+                supported by NASA's Hinode program. Hinode is a Japanese mission developed and
+                launched by ISAS/JAXA with NAOJ as a domestic partner and NASA and STFC (UK) as
+                international partners. It is operated by these agencies in cooperation with ESA and
+                NSC (Norway). The work of N.M.V. was supported by the NASA Supporting Research
+                program. The complete source of this paper, including the data, code, and
+                instructions for training the classification model, can be found at <ext-link
+                    ext-link-type="uri"
+                    xlink:href="http://github.com/rice-solar-physics/synthetic-observables-paper-observations"
+                    xlink:type="simple"
+                    >github.com/rice-solar-physics/synthetic-observables-paper-observations</ext-link>.</p>
+            <p>
+                <italic toggle="yes">Facility:</italic>
+                <named-content content-type="facility" xlink:href="https://sdo.gsfc.nasa.gov/"
+                    xlink:type="simple">SDO(AIA).</named-content>
+            </p>
+            <p>
+                <italic toggle="yes">Software:</italic> astropy (v3.1.0; The Astropy Collaboration
+                    <xref ref-type="bibr" rid="R4">2018</xref>; The Astropy Collaboration et al.
+                    <xref ref-type="bibr" rid="R5">2018</xref>), dask (v1.0.0; Rocklin <xref
+                    ref-type="bibr" rid="R6">2015</xref>), drms (v0.5; Glogowski et al. <xref
+                    ref-type="bibr" rid="R7">2019a</xref>, <xref ref-type="bibr" rid="R8"
+                    >2019b</xref>), matplotlib (v3.0.2; Hunter <xref ref-type="bibr" rid="R9"
+                    >2007</xref>; Caswell et al. <xref ref-type="bibr" rid="R10">2018</xref>), numpy
+                (v1.15.4; Harris et al. <xref ref-type="bibr" rid="R11">2020</xref>), PythonTeX
+                (v0.16; Poore <xref ref-type="bibr" rid="R12">2015</xref>), scikit-learn (v0.20;
+                Pedregosa et al. <xref ref-type="bibr" rid="R13">2011</xref>; Grisel et al. <xref
+                    ref-type="bibr" rid="R14">2019</xref>), seaborn (v0.9.0; Waskom et al. <xref
+                    ref-type="bibr" rid="R15">2018</xref>), scipy (v1.1.0; Virtanen et al. <xref
+                    ref-type="bibr" rid="R17">2018</xref>, <xref ref-type="bibr" rid="R18"
+                    >2020</xref>), SolarSoftware (Freeland &amp; Handy <xref ref-type="bibr"
+                    rid="R19">1998</xref>), sunpy (v0.9.5; Mumford et al. <xref ref-type="bibr"
+                    rid="R1">2018</xref>).</p>
+        </ack>
+        <ref-list content-type="alphabetical">
+            <title>References</title>
+            <ref id="R3">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Barnes</surname>
+                            <given-names>W. T.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Bradshaw</surname>
+                            <given-names>S. J.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Viall</surname>
+                            <given-names>N. M.</given-names>
+                        </name>
+                    </person-group>
+                    <year>2019</year>
+                    <source>ApJ</source>
+                    <volume>880</volume>
+                    <fpage>56</fpage>
+                    <ext-link ext-link-type="bibcode" xlink:type="simple"
+                        >2019ApJ...880...56B</ext-link>
+                    <pub-id pub-id-type="doi">10.3847/1538-4357/ab290c</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="R10">
+                <element-citation publication-type="misc" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Caswell</surname>
+                            <given-names>T. A.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Droettboom</surname>
+                            <given-names>M.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Hunter</surname>
+                            <given-names>J.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2018</year>
+                    <source>matplotlib/matplotlib, v3.0.2</source>
+                    <comment>Zenodo, doi:<ext-link ext-link-type="uri"
+                            xlink:href="https://doi.org/10.5281/zenodo.1482099" xlink:type="simple"
+                            >10.5281/zenodo.1482099</ext-link>
+                    </comment>
+                </element-citation>
+            </ref>
+            <ref id="R19">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Freeland</surname>
+                            <given-names>S. L.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Handy</surname>
+                            <given-names>B. N.</given-names>
+                        </name>
+                    </person-group>
+                    <year>1998</year>
+                    <source>SoPh</source>
+                    <volume>182</volume>
+                    <fpage>497</fpage>
+                    <ext-link ext-link-type="bibcode" xlink:type="simple"
+                        >1998SoPh..182..497F</ext-link>
+                    <pub-id pub-id-type="doi">10.1023/A:1005038224881</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="R7">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Glogowski</surname>
+                            <given-names>K.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Bobra</surname>
+                            <given-names>M.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Freij</surname>
+                            <given-names>N.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2019a</year>
+                    <source>sunpy/drms: drms, v0.5.6</source>
+                    <comment>Zenodo, doi:<ext-link ext-link-type="uri"
+                            xlink:href="https://doi.org/10.5281/zenodo.2572850" xlink:type="simple"
+                            >10.5281/zenodo.2572850</ext-link>
+                    </comment>
+                </element-citation>
+            </ref>
+            <ref id="R8">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Glogowski</surname>
+                            <given-names>K.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Bobra</surname>
+                            <given-names>M. G.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Choudhary</surname>
+                            <given-names>N.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Amezcua</surname>
+                            <given-names>A. B.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Mumford</surname>
+                            <given-names>S. J.</given-names>
+                        </name>
+                    </person-group>
+                    <year>2019b</year>
+                    <source>JOSS</source>
+                    <volume>4</volume>
+                    <fpage>1614</fpage>
+                    <ext-link ext-link-type="bibcode" xlink:type="simple"
+                        >2019JOSS....4.1614G</ext-link>
+                    <pub-id pub-id-type="doi">10.21105/joss.01614</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="R14">
+                <element-citation publication-type="misc" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Grisel</surname>
+                            <given-names>O.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Mueller</surname>
+                            <given-names>A.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Lars</surname>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2019</year>
+                    <source>scikit-learn/scikit-learn, v0.20.3</source>
+                    <comment>Zenodo, doi:<ext-link ext-link-type="uri"
+                            xlink:href="https://doi.org/10.5281/zenodo.2582066" xlink:type="simple"
+                            >10.5281/zenodo.2582066</ext-link>
+                    </comment>
+                </element-citation>
+            </ref>
+            <ref id="R11">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Harris</surname>
+                            <given-names>C. R.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Millman</surname>
+                            <given-names>K. J.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>van der Walt</surname>
+                            <given-names>S. J.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2020</year>
+                    <source>Natur</source>
+                    <volume>585</volume>
+                    <fpage>357</fpage>
+                    <ext-link ext-link-type="bibcode" xlink:type="simple"
+                        >2020Natur.585..357H</ext-link>
+                    <pub-id pub-id-type="doi">10.1038/s41586-020-2649-2</pub-id>
+                </element-citation>
+            </ref>
+
+            <ref id="R9">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Hunter</surname>
+                            <given-names>J. D.</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>CSE</source>
+                    <volume>9</volume>
+                    <fpage>90</fpage>
+                    <ext-link ext-link-type="bibcode" xlink:type="simple"
+                        >2007CSE.....9...90H</ext-link>
+                    <pub-id pub-id-type="doi">10.1109/MCSE.2007.55</pub-id>
+                </element-citation>
+            </ref>
+
+            <ref id="R1">
+                <element-citation publication-type="misc" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Mumford</surname>
+                            <given-names>S.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Christe</surname>
+                            <given-names>S.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Mayer</surname>
+                            <given-names>F.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2018</year>
+                    <source>sunpy/sunpy, v0.9.5</source>
+                    <comment>Zenodo, doi:<ext-link ext-link-type="uri"
+                            xlink:href="https://doi.org/10.5281/zenodo.2155946" xlink:type="simple"
+                            >10.5281/zenodo.2155946</ext-link>
+                    </comment>
+                </element-citation>
+            </ref>
+
+            <ref id="R13">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Pedregosa</surname>
+                            <given-names>F.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Varoquaux</surname>
+                            <given-names>G.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Gramfort</surname>
+                            <given-names>A.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2011</year>
+                    <source>JMLR</source>
+                    <volume>12</volume>
+                    <fpage>2825</fpage>
+                </element-citation>
+            </ref>
+
+            <ref id="R12">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Poore</surname>
+                            <given-names>G. M.</given-names>
+                        </name>
+                    </person-group>
+                    <year>2015</year>
+                    <source>CS&amp;D</source>
+                    <volume>8</volume>
+                    <elocation-id content-type="artnum">014010</elocation-id>
+                    <ext-link ext-link-type="bibcode" xlink:type="simple"
+                        >2015CS&amp;D....8a4010P</ext-link>
+                    <pub-id pub-id-type="doi">10.1088/1749-4699/8/1/014010</pub-id>
+                </element-citation>
+            </ref>
+
+            <ref id="R6">
+                <element-citation publication-type="confproc" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Rocklin</surname>
+                            <given-names>M.</given-names>
+                        </name>
+                    </person-group>
+                    <year>2015</year>
+                    <conf-name>Proc. 14th Python in Science Conf.</conf-name>
+                    <person-group person-group-type="editor">
+                        <name name-style="western">
+                            <surname>Huff</surname>
+                            <given-names>K.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Bergstra</surname>
+                            <given-names>J.</given-names>
+                        </name>
+                    </person-group>
+                    <publisher-loc>Austin, TX</publisher-loc>
+                    <publisher-name>SciPy</publisher-name>
+                    <fpage>126</fpage>
+                    <pub-id pub-id-type="doi">10.25080/Majora-7b98e3ed-013</pub-id>
+                </element-citation>
+            </ref>
+
+            <ref id="R4">
+                <element-citation publication-type="misc" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <collab xlink:type="simple">The Astropy Collaboration</collab>
+                    </person-group>
+                    <year>2018</year>
+                    <source>astropy/astropy, v3.1</source>
+                    <comment>Zenodo, doi:<ext-link ext-link-type="uri"
+                            xlink:href="https://doi.org/10.5281/zenodo.4080996" xlink:type="simple"
+                            >10.5281/zenodo.4080996</ext-link>
+                    </comment>
+                </element-citation>
+            </ref>
+            <ref id="R5">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <collab xlink:type="simple">The Astropy Collaboration</collab>
+                        <name name-style="western">
+                            <surname>Price-Whelan</surname>
+                            <given-names>A. M.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Sipőcz</surname>
+                            <given-names>B. M.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2018</year>
+                    <source>AJ</source>
+                    <volume>156</volume>
+                    <fpage>123</fpage>
+                    <ext-link ext-link-type="bibcode" xlink:type="simple"
+                        >2018AJ....156..123A</ext-link>
+                    <pub-id pub-id-type="doi">10.3847/1538-3881/aac387</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="R2">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <collab xlink:type="simple">The SunPy Community</collab>
+                        <name name-style="western">
+                            <surname>Barnes</surname>
+                            <given-names>W. T.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Bobra</surname>
+                            <given-names>M. G.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2020</year>
+                    <source>ApJ</source>
+                    <volume>890</volume>
+                    <fpage>68</fpage>
+                    <ext-link ext-link-type="bibcode" xlink:type="simple"
+                        >2020ApJ...890...68A</ext-link>
+                    <pub-id pub-id-type="doi">10.3847/1538-4357/ab4f7a</pub-id>
+                </element-citation>
+            </ref>
+
+            <ref id="R17">
+                <element-citation publication-type="misc" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Virtanen</surname>
+                            <given-names>P.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Gommers</surname>
+                            <given-names>R.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Burovski</surname>
+                            <given-names>E.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2018</year>
+                    <source>scipy/scipy, v1.1.0</source>
+                    <comment>Zenodo, doi:<ext-link ext-link-type="uri"
+                            xlink:href="https://doi.org/10.5281/zenodo.1241501" xlink:type="simple"
+                            >10.5281/zenodo.1241501</ext-link>
+                    </comment>
+                </element-citation>
+            </ref>
+            <ref id="R18">
+                <element-citation publication-type="journal" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Virtanen</surname>
+                            <given-names>P.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Gommers</surname>
+                            <given-names>R.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Oliphant</surname>
+                            <given-names>T. E.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2020</year>
+                    <source>Nat. Methods</source>
+                    <volume>17</volume>
+                    <fpage>261</fpage>
+                    <ext-link ext-link-type="bibcode" xlink:type="simple"
+                        >2020NatMe..17..261V</ext-link>
+                    <pub-id pub-id-type="doi">10.1038/s41592-019-0686-2</pub-id>
+                </element-citation>
+            </ref>
+
+            <ref id="R15">
+                <element-citation publication-type="misc" xlink:type="simple">
+                    <person-group person-group-type="author">
+                        <name name-style="western">
+                            <surname>Waskom</surname>
+                            <given-names>M.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>Botvinnik</surname>
+                            <given-names>O.</given-names>
+                        </name>
+                        <name name-style="western">
+                            <surname>O’Kane</surname>
+                            <given-names>D.</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2018</year>
+                    <source>mwaskom/seaborn, v0.9.0</source>
+                    <comment>Zenodo, doi:<ext-link ext-link-type="uri"
+                            xlink:href="https://doi.org/10.5281/zenodo.1313201" xlink:type="simple"
+                            >10.5281/zenodo.1313201</ext-link>
+                    </comment>
+                </element-citation>
+            </ref>
+        </ref-list>
+    </back>
+</article>
