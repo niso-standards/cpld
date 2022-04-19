@@ -2,7 +2,10 @@
 
 This repository contains examples and a test suite for implementations of the Content Profile and Linked Document standard
 
-## How to run
+
+## Test Suite
+
+### How to run
 
 First, you'll have to use `poetry` to install required packages:
 
@@ -12,7 +15,7 @@ Then you can run `pytest` through `poetry`:
 
 `poetry run pytest` (use `-v` or `-vv` to get more verbose output)
 
-## Defining Tests
+### Defining Tests
 
 The tests are captured in the [manifest.json](src/tests/data/manifest.json) using the following structure:
 
@@ -48,12 +51,12 @@ The [test_cpld_cases.py](src/tests/test_cpld_cases.py) file is a `pytest` implem
 
 **NB** it is the intention to separate the tests from the Python implementation in the future.
 
-## Types of Tests
+### Types of Tests
 
 * The `RetrievalTest` retrieves a property value from an instantiated CPLD Document object (from the `input` file) and compares it to the value stored in the file indicated by the `output` attribute. The Python library implements this using a standard *getter* method on the CPLD Document class.
 * The `ComparisonTest` instantiates a CPLD Document from the `input` file, and compares the literal serialization of (part of) that document to the information stored in the `html_output`, `jsonld_output` or `nquads_output`. It can be used to test roundtripping, or check that all intended RDF triples are properly loaded from the JSON-LD.
 * The `NegativeTest` attempts to instantiate a CPLD Document from the `input` file, and expects a specific exception to be raised by the implementation. The test fails if no exception is raised, or if an exception of a different type is raised. The exceptions are currently only documented in the [exceptions.py](src/cpld/exceptions.py) file.
 
-## Test Documentation
+### Test Documentation
 
 The [tests.md](tests.md) file is periodically generated from the [manifest.json](src/tests/data/manifest.json) file to give a more readable overview of the test suite.
