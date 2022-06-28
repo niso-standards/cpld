@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:base="https://cpld.example.com/document/3a2b3c">
+    <head>
+        <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+        <meta name="id" content="https://cpld.example.com/document/3a2b3c" />
+        <meta name="dct.conformsTo" content="http://cpld.example.com/schema/cpld/" />
+        <meta name="dct.rights" content="Elsevier Inc." />
+        <title>A very simple example to showcase "packaging"</title>
+        <link type="application/ld+json" rel="describedby" href="example3.jsonld" />
+        <link rel="stylesheet" href="css/example3.css"/>
+    </head>
+    <body>
+        <header id="header_1">
+            <h1 id="h1_1">A very simple example to showcase "packaging"</h1>
+        </header>
+        <section id="section_1">
+            <h2 id="h2_1">Introduction</h2>
+            <p id="p_1">
+                It is not unusual for content to contain images, or even references to external media. 
+                This simple example shows how we can use the <a href="https://www.w3.org/TR/pub-manifest/">W3C Publication Manifest</a> standard to create a content package for a Content Profile linked document.
+            </p>
+            <p id="p_2">
+                This linked document is composed of:
+            </p>
+            <ul>
+                <li>This HTML file</li>
+                <li>Two JSON-LD <code>@context</code> files. One for CPLD, and one for W3C annotations</li>
+                <li>An image</li>
+                <li>A css file</li>
+                <li>Four web font files (the Atkinson Hyperlegible font, developed by the US Braille Institute</li>
+            </ul>
+            <p id="p_3">
+                The <code>manifest.json</code> file stitches everything together. As an example, it's using both a direct mention (of the <code>example3.css</code> file) and <code>LinkedResource</code> elements for the other elements.
+            </p>
+            <p id="p_4">The publication manifest standard allows the inclusion of a cover page, and other elements as well, but these were left out for brevity</p>
+        </section>
+        <section id="section_2">
+            <h2 id="h2_1">Pastafari Wizard</h2>
+            <p id="p_5">And now, the moment we've all been waiting for: a picture of a magical elf and a pastafari wizard. Courtesy of DALL-E mini.</p>
+            <figure id="figure_1">
+                <img id="image_1" src="/media/dallemini_elf_wizard.png"
+                        alt="DALL-E Mini image of a magical elf and a pastafari wizard">
+                <figcaption>A magical elf and a pastafari wizard</figcaption>
+            </figure>
+        </section>
+    </body>
+</html>

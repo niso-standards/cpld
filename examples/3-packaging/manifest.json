@@ -1,0 +1,79 @@
+{
+    "@context": [
+        "https://schema.org",
+        "https://www.w3.org/ns/pub-context",
+        {"language" : "en"}
+    ],
+    "id": "https://cpld.example.com/document/3a2b3c",
+    "conformsTo": "https://www.w3.org/TR/pub-manifest/",
+    "type": "CreativeWork",
+    "author": "Rinke Hoekstra",
+    "dateModified": "2022-06-28T10:00:00Z",
+
+    "readingOrder": [
+        "example3.html"
+    ],
+
+    "resources": [
+        "css/example3.css",
+        {
+            "type": "LinkedResource",
+            "url": "example3.html"
+        },{
+            "type": "LinkedResource",
+            "url": "media/dalliemini_elf_wizard.png",
+            "encodingFormat": "image/png"
+        },{
+            "type": "LinkedResource",
+            "url": "includes/anno_slim.jsonld",
+            "encodingFormat": "application/ld+json"
+        },{
+            "type": "LinkedResource",
+            "url": "cpld-niso-context.jsonld",
+            "encodingFormat": "application/ld+json"
+        },
+        {
+            "type": "LinkedResource",
+            "url": "example3.jsonld",
+            "encodingFormat": "application/ld+json"
+        },
+        {
+            "type": "LinkedResource",
+            "url": "fonts/Atkinson-Hyperlegible-Regular-102.eot",
+            "encodingFormat": "application/vnd.ms-fontobject"
+        },{
+            "type": "LinkedResource",
+            "url": "fonts/Atkinson-Hyperlegible-Regular-102a.woff2",
+            "encodingFormat": "font/woff2"
+        },{
+            "type": "LinkedResource",
+            "url": "fonts/Atkinson-Hyperlegible-Bold-102.eot",
+            "encodingFormat": "application/vnd.ms-fontobject"
+        },{
+            "type": "LinkedResource",
+            "url": "fonts/Atkinson-Hyperlegible-Bold-102a.woff2",
+            "encodingFormat": "font/woff2"
+        },{
+            "type": "LinkedResource",
+            "url": "fonts/Atkinson-Hyperlegible-Italic-102.eot",
+            "encodingFormat": "application/vnd.ms-fontobject"
+        },{
+            "type": "LinkedResource",
+            "url": "fonts/Atkinson-Hyperlegible-Italic-102a.woff2",
+            "encodingFormat": "font/woff2"
+        },{
+            "type": "LinkedResource",
+            "url": "fonts/Atkinson-Hyperlegible-BoldItalic-102.eot",
+            "encodingFormat": "application/vnd.ms-fontobject"
+        },{
+            "type": "LinkedResource",
+            "url": "fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2",
+            "encodingFormat": "font/woff2"
+        },
+        {
+            "type": "LinkedResource",
+            "url": "fonts/OFL.txt",
+            "encodingFormat": "text/plain"
+        }
+    ]
+}
