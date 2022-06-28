@@ -1,0 +1,140 @@
+{
+    "@context": {
+      "bibo": "http://purl.org/ontology/bibo/",
+      "brick": "https://brickschema.org/schema/Brick#",
+      "cc": "http://web.resource.org/cc/",
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "dc": "http://purl.org/dc/elements/1.1/",
+      "dcam": "http://purl.org/dc/dcam/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "dcmitype": "http://purl.org/dc/dcmitype/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "doap": "http://usefulinc.com/ns/doap#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "odrl": "http://www.w3.org/ns/odrl/2/",
+      "org": "http://www.w3.org/ns/org#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "pdf": "http://ns.adobe.com/pdf/1.3/",
+      "prism": "http://prismstandard.org/namespaces/basic/2.0/",
+      "prof": "http://www.w3.org/ns/dx/prof/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "qb": "http://purl.org/linked-data/cube#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "rights": "http://ns.adobe.com/xap/1.0/rights/",
+      "schema": "https://schema.org/",
+      "sh": "http://www.w3.org/ns/shacl#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "sosa": "http://www.w3.org/ns/sosa/",
+      "ssn": "http://www.w3.org/ns/ssn/",
+      "time": "http://www.w3.org/2006/time#",
+      "vann": "http://purl.org/vocab/vann/",
+      "void": "http://rdfs.org/ns/void#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+      "doc": "https://doi.org/10.1088/0000-0000/IOP1#"
+    },
+    "@graph": [
+      {
+        "@id": "https://doi.org/10.1088/0000-0000/IOP1",
+        "@type": "bibo:AcademicArticle",
+        "bibo:authorList": {
+          "@list": [
+            {
+              "@id": "_:N1235f04c945a44c082250e19b5419bae"
+            }
+          ]
+        },
+        "bibo:doi": "10.1088/0000-0000/IOP1",
+        "bibo:uri": "info:doi/10.1088/0000-0000/IOP1",
+        "bibo:volume": "1",
+        "cc:attributionURL": {
+          "@id": "https://doi.org/10.1088/0000-0000/IOP1"
+        },
+        "dc:creator": "Joe Bloggs",
+        "dc:description": "\n                Abstract\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus augue in\n                    lorem rhoncus maximus. Suspendisse euismod ornare turpis nec rhoncus. In hac\n                    habitasse platea dictumst. Nam ac leo eget tellus cursus euismod. Sed dignissim\n                    est nec diam vehicula eleifend. Aenean euismod quam enim, et ullamcorper quam\n                    efficitur eu. Maecenas id metus a dui hendrerit tempor tincidunt eget velit.\n                    Donec vel nibh sit amet nisi accumsan vehicula id in metus. Maecenas ut neque\n                    porttitor quam ultrices consectetur. Vivamus congue ipsum sem. Donec vitae nulla\n                    iaculis, sollicitudin sem vitae, efficitur dui. Proin vitae leo a tortor\n                    ultrices convallis a at tellus. Etiam dolor nisi, laoreet ut metus eget, porta\n                    ornare dolor. Donec tempor, erat non cursus pharetra, felis justo luctus leo, ac\n                    vestibulum quam mauris sed magna.\n            ",
+        "dc:format": "application/pdf",
+        "dc:identifier": "doi:10.1088/0000-0000/IOP1",
+        "dc:publisher": "IOP Publishing",
+        "dc:title": "Example Data Linking Article",
+        "dcterms:abstract": "\n                Abstract\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus augue in\n                    lorem rhoncus maximus. Suspendisse euismod ornare turpis nec rhoncus. In hac\n                    habitasse platea dictumst. Nam ac leo eget tellus cursus euismod. Sed dignissim\n                    est nec diam vehicula eleifend. Aenean euismod quam enim, et ullamcorper quam\n                    efficitur eu. Maecenas id metus a dui hendrerit tempor tincidunt eget velit.\n                    Donec vel nibh sit amet nisi accumsan vehicula id in metus. Maecenas ut neque\n                    porttitor quam ultrices consectetur. Vivamus congue ipsum sem. Donec vitae nulla\n                    iaculis, sollicitudin sem vitae, efficitur dui. Proin vitae leo a tortor\n                    ultrices convallis a at tellus. Etiam dolor nisi, laoreet ut metus eget, porta\n                    ornare dolor. Donec tempor, erat non cursus pharetra, felis justo luctus leo, ac\n                    vestibulum quam mauris sed magna.\n            ",
+        "dcterms:bibliographicCitation": "Bloggs () Example Data Linking Article. The Example Journal 1:1 https://doi.org/10.1088/0000-0000/IOP1",
+        "dcterms:creator": {
+          "@id": "_:N667bcb4bfb8048c1a1e2ea2766c142f9"
+        },
+        "dcterms:format": [
+          {
+            "@id": "_:Ne604c77934e44d6b9168d04d00122872"
+          },
+          {
+            "@id": "_:N8889728a8b894b678af46b935f87989b"
+          },
+          {
+            "@id": "_:N5ba475be2e8b428db3f02563c0b1f873"
+          }
+        ],
+        "dcterms:identifier": "doi:10.1088/0000-0000/IOP1",
+        "dcterms:isPartOf": {
+          "@id": "urn:issn:0000-0000"
+        },
+        "dcterms:publisher": {
+          "@id": "_:N3392a369dcf74240a32e82526bd6a3a6"
+        },
+        "dcterms:rights": {
+          "@id": "legalcode"
+        },
+        "dcterms:title": "Example Data Linking Article",
+        "dcterms:type": {
+          "@id": "dcmitype:Text"
+        },
+        "prism:doi": "10.1088/0000-0000/IOP1",
+        "prism:issn": "0000-0000",
+        "prism:publicationName": "The Example Journal",
+        "prism:url": "https://doi.org/10.1088/0000-0000/IOP1",
+        "prism:volume": "1",
+        "rights:Marked": "False"
+      },
+      {
+        "@id": "_:N667bcb4bfb8048c1a1e2ea2766c142f9",
+        "@type": "dcterms:Agent",
+        "foaf:familyName": "Bloggs",
+        "foaf:givenName": "Joe"
+      },
+      {
+        "@id": "_:Ne604c77934e44d6b9168d04d00122872",
+        "@type": "dcterms:MediaTypeOrExtent",
+        "rdf:value": "application/pdf"
+      },
+      {
+        "@id": "_:N8889728a8b894b678af46b935f87989b",
+        "@type": "dcterms:MediaTypeOrExtent",
+        "rdf:value": "text/html"
+      },
+      {
+        "@id": "_:N5ba475be2e8b428db3f02563c0b1f873",
+        "@type": "dcterms:MediaTypeOrExtent",
+        "rdf:value": "application/xml"
+      },
+      {
+        "@id": "_:N3392a369dcf74240a32e82526bd6a3a6",
+        "@type": "dcterms:Agent",
+        "foaf:name": "IOP Publishing"
+      },
+      {
+        "@id": "_:N1235f04c945a44c082250e19b5419bae",
+        "@type": "foaf:Agent",
+        "foaf:familyName": "Bloggs",
+        "foaf:givenName": "Joe"
+      },
+      {
+        "@id": "urn:issn:0000-0000",
+        "@type": "bibo:Periodical",
+        "bibo:issn": "0000-0000",
+        "dc:title": "The Example Journal"
+      },
+      {
+        "@id": "legalcode",
+        "@type": "dcterms:RightsStatement"
+      }
+    ]
+  }

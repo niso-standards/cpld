@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html xml:base="https://doi.org/10.1088/0000-0000/IOP1">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Bloggs: Example Data Linking Article</title>
+   <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+   <meta name="id" content="https://doi.org/10.1088/0000-0000/IOP1" />
+   <meta name="dct.conformsTo" content="http://cpld.example.com/schema/cpld/" />
+   <meta name="dct.rights" content="NISO" />
+   <link type="application/ld+json" rel="describedby" href="example2.jsonld" />
+</head>
+
+<body>
+   <div id="article1-front" class="front">
+      <div class="page-header">
+         <h1 class="page-title">Example Data Linking Article</h1>
+         <h3 class="page-authors">Joe Bloggs</h3>
+      </div>
+   </div>
+   <div id="article1-body" class="body">
+      <div class="section"><a id="s1">
+            <!-- named anchor -->
+         </a>
+         <h2 class="main-title">Introduction</h2>
+         <h5 class="label">1.</h5>
+         <p id="d5e77">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus augue in
+            lorem rhoncus maximus. Suspendisse euismod ornare turpis nec rhoncus. In hac
+            habitasse platea dictumst. Nam ac leo eget tellus cursus euismod. Sed dignissim est
+            nec diam vehicula eleifend. Aenean euismod quam enim, et ullamcorper quam efficitur
+            eu. Maecenas id metus a dui hendrerit tempor tincidunt eget velit. Donec vel nibh
+            sit amet nisi accumsan vehicula id in metus. Maecenas ut neque porttitor quam
+            ultrices consectetur. Vivamus congue ipsum sem. Donec vitae nulla iaculis,
+            sollicitudin sem vitae, efficitur dui. Proin vitae leo a tortor ultrices convallis
+            a
+            at tellus. Etiam dolor nisi, laoreet ut metus eget, porta ornare dolor. Donec
+            tempor, erat non cursus pharetra, felis justo luctus leo, ac vestibulum quam mauris
+            sed magna.
+         </p>
+      </div>
+      <div class="section"><a id="s2">
+            <!-- named anchor -->
+         </a>
+         <h2 class="main-title">Observations and Analysis</h2>
+         <h5 class="label">2.</h5>
+         <p id="d5e84">Ut sed ligula vel quam tempor mollis. Phasellus egestas tellus ut mollis tempor.
+            Aliquam posuere sit amet ex fringilla porta. Vestibulum ornare risus est, faucibus
+            sagittis ligula aliquam sagittis. Praesent id mauris non massa fringilla
+            pellentesque eu ut erat. Nullam eget arcu ornare, tempor odio vitae, tempus quam.
+            In
+            a vulputate lacus, quis consectetur tortor. Vivamus blandit gravida nunc, nec
+            pulvinar lacus. Phasellus tincidunt ultricies dolor, eget pretium ante varius id.
+            Donec laoreet ac sem eu dapibus. Fusce mattis pharetra lacus, ac luctus odio
+            venenatis et. Duis id justo enim. Phasellus facilisis sem finibus mattis hendrerit.
+            Curabitur sit amet orci orci. Cras vehicula lectus ut leo volutpat, ut ultrices quam
+            dapibus.
+         </p>
+      </div>
+   </div>
+   <div id="article1-back" class="back">
+      <div class="back-section"><a id="d5e87">
+            <!-- named anchor -->
+         </a>
+         <h2 class="main-title">Acknowledgements</h2>
+         <p class="first" id="d5e88">This research makes use of version 0.9.5 (Mumford et al. <a href="#R1">2018</a>) of
+            sunpy, an open-source and free community-developed
+            solar data analysis package written in Python (The SunPy Community et al. <a href="#R2">2020</a>). We use
+            v0.9.5 in this work, to maintain
+            consistency with the software environment used in Paper <a href="#R3">I</a> which was completed prior to the
+            v1.0 release of sunpy. S.J.B.
+            and W.T.B. were supported by the NSF through CAREER award AGS-1450230. W.T.B. was
+            supported by NASA's Hinode program. Hinode is a Japanese mission developed and
+            launched by ISAS/JAXA with NAOJ as a domestic partner and NASA and STFC (UK) as
+            international partners. It is operated by these agencies in cooperation with ESA and
+            NSC (Norway). The work of N.M.V. was supported by the NASA Supporting Research
+            program. The complete source of this paper, including the data, code, and
+            instructions for training the classification model, can be found at <a target="xrefwindow"
+               href="http://github.com/rice-solar-physics/synthetic-observables-paper-observations"
+               id="d5e99">github.com/rice-solar-physics/synthetic-observables-paper-observations</a>.
+         </p>
+         <p id="d5e102">
+            <i>Facility:</i>
+            <span class="facility">SDO(AIA).</span>
+
+         </p>
+         <p id="d5e110">
+            <i>Software:</i> astropy (v3.1.0; The Astropy Collaboration
+            <a href="#R4">2018</a>; The Astropy Collaboration et al.
+            <a href="#R5">2018</a>), dask (v1.0.0; Rocklin <a href="#R6">2015</a>), drms (v0.5; Glogowski et al. <a
+               href="#R7">2019a</a>, <a href="#R8">2019b</a>), matplotlib (v3.0.2; Hunter <a href="#R9">2007</a>;
+            Caswell et al. <a href="#R10">2018</a>), numpy
+            (v1.15.4; Harris et al. <a href="#R11">2020</a>), PythonTeX
+            (v0.16; Poore <a href="#R12">2015</a>), scikit-learn (v0.20;
+            Pedregosa et al. <a href="#R13">2011</a>; Grisel et al. <a href="#R14">2019</a>), seaborn (v0.9.0; Waskom et
+            al. <a href="#R15">2018</a>), scipy (v1.1.0; Virtanen et al. <a href="#R17">2018</a>, <a
+               href="#R18">2020</a>), SolarSoftware (Freeland &amp; Handy <a href="#R19">1998</a>), sunpy (v0.9.5;
+            Mumford et al. <a href="#R1">2018</a>).
+         </p>
+      </div>
+      <div class="back-section"><a id="d5e165">
+            <!-- named anchor -->
+         </a>
+         <div class="section ref-list"><a id="d5e165">
+               <!-- named anchor -->
+            </a>
+            <h2 class="main-title">References</h2>
+            <div class="ref-list table">
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">1</span></span>&nbsp;<a id="R3">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e169">
+                           <!-- named anchor -->
+                        </a>
+                        W. T. Barnes
+                        S. J. Bradshaw
+                        N. M. Viall
+                        2019ApJ88056<a target="xrefwindow" href="2019ApJ...880...56B"
+                           id="d5e198">2019ApJ...880...56B</a>10.3847/1538-4357/ab290c
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">2</span></span>&nbsp;<a id="R10">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e203">
+                           <!-- named anchor -->
+                        </a>
+                        T. A. Caswell
+                        M. Droettboom
+                        J. Hunter
+
+                        2018matplotlib/matplotlib, v3.0.2Zenodo, doi:<a target="xrefwindow"
+                           href="https://doi.org/10.5281/zenodo.1482099" id="d5e232">10.5281/zenodo.1482099</a>
+
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">3</span></span>&nbsp;<a id="R19">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e236">
+                           <!-- named anchor -->
+                        </a>
+                        S. L. Freeland
+                        B. N. Handy
+                        1998SoPh182497<a target="xrefwindow" href="1998SoPh..182..497F"
+                           id="d5e259">1998SoPh..182..497F</a>10.1023/A:1005038224881
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">4</span></span>&nbsp;<a id="R7">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e264">
+                           <!-- named anchor -->
+                        </a>
+                        K. Glogowski
+                        M. Bobra
+                        N. Freij
+
+                        2019asunpy/drms: drms, v0.5.6Zenodo, doi:<a target="xrefwindow"
+                           href="https://doi.org/10.5281/zenodo.2572850" id="d5e293">10.5281/zenodo.2572850</a>
+
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">5</span></span>&nbsp;<a id="R8">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e297">
+                           <!-- named anchor -->
+                        </a>
+                        K. Glogowski
+                        M. G. Bobra
+                        N. Choudhary
+                        A. B. Amezcua
+                        S. J. Mumford
+                        2019bJOSS41614<a target="xrefwindow" href="2019JOSS....4.1614G"
+                           id="d5e338">2019JOSS....4.1614G</a>10.21105/joss.01614
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">6</span></span>&nbsp;<a id="R14">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e343">
+                           <!-- named anchor -->
+                        </a>
+                        O. Grisel
+                        A. Mueller
+                        Lars
+
+                        2019scikit-learn/scikit-learn, v0.20.3Zenodo, doi:<a target="xrefwindow"
+                           href="https://doi.org/10.5281/zenodo.2582066" id="d5e370">10.5281/zenodo.2582066</a>
+
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">7</span></span>&nbsp;<a id="R11">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e374">
+                           <!-- named anchor -->
+                        </a>
+                        C. R. Harris
+                        K. J. Millman
+                        S. J. van der Walt
+
+                        2020Natur585357<a target="xrefwindow" href="2020Natur.585..357H"
+                           id="d5e405">2020Natur.585..357H</a>10.1038/s41586-020-2649-2
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">8</span></span>&nbsp;<a id="R9">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e410">
+                           <!-- named anchor -->
+                        </a>
+                        J. D. Hunter
+                        2007CSE990<a target="xrefwindow" href="2007CSE.....9...90H"
+                           id="d5e427">2007CSE.....9...90H</a>10.1109/MCSE.2007.55
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">9</span></span>&nbsp;<a id="R1">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e432">
+                           <!-- named anchor -->
+                        </a>
+                        S. Mumford
+                        S. Christe
+                        F. Mayer
+
+                        2018sunpy/sunpy, v0.9.5Zenodo, doi:<a target="xrefwindow"
+                           href="https://doi.org/10.5281/zenodo.2155946" id="d5e461">10.5281/zenodo.2155946</a>
+
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">10</span></span>&nbsp;<a id="R13">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e465">
+                           <!-- named anchor -->
+                        </a>
+                        F. Pedregosa
+                        G. Varoquaux
+                        A. Gramfort
+
+                        2011JMLR122825
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">11</span></span>&nbsp;<a id="R12">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e498">
+                           <!-- named anchor -->
+                        </a>
+                        G. M. Poore
+                        2015CS&amp;D8014010<a target="xrefwindow" href="2015CS&amp;D....8a4010P"
+                           id="d5e515">2015CS&amp;D....8a4010P</a>10.1088/1749-4699/8/1/014010
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">12</span></span>&nbsp;<a id="R6">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e520">
+                           <!-- named anchor -->
+                        </a>
+                        M. Rocklin
+                        2015Proc. 14th Python in Science Conf.
+                        K. Huff
+                        J. Bergstra
+                        Austin, TXSciPy12610.25080/Majora-7b98e3ed-013
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">13</span></span>&nbsp;<a id="R4">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e556">
+                           <!-- named anchor -->
+                        </a>
+                        The Astropy Collaboration
+                        2018astropy/astropy, v3.1Zenodo, doi:<a target="xrefwindow"
+                           href="https://doi.org/10.5281/zenodo.4080996" id="d5e568">10.5281/zenodo.4080996</a>
+
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">14</span></span>&nbsp;<a id="R5">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e572">
+                           <!-- named anchor -->
+                        </a>
+                        The Astropy Collaboration
+                        A. M. Price-Whelan
+                        B. M. Sipőcz
+
+                        2018AJ156123<a target="xrefwindow" href="2018AJ....156..123A"
+                           id="d5e600">2018AJ....156..123A</a>10.3847/1538-3881/aac387
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">15</span></span>&nbsp;<a id="R2">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e605">
+                           <!-- named anchor -->
+                        </a>
+                        The SunPy Community
+                        W. T. Barnes
+                        M. G. Bobra
+
+                        2020ApJ89068<a target="xrefwindow" href="2020ApJ...890...68A"
+                           id="d5e633">2020ApJ...890...68A</a>10.3847/1538-4357/ab4f7a
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">16</span></span>&nbsp;<a id="R17">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e638">
+                           <!-- named anchor -->
+                        </a>
+                        P. Virtanen
+                        R. Gommers
+                        E. Burovski
+
+                        2018scipy/scipy, v1.1.0Zenodo, doi:<a target="xrefwindow"
+                           href="https://doi.org/10.5281/zenodo.1241501" id="d5e667">10.5281/zenodo.1241501</a>
+
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">17</span></span>&nbsp;<a id="R18">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e671">
+                           <!-- named anchor -->
+                        </a>
+                        P. Virtanen
+                        R. Gommers
+                        T. E. Oliphant
+
+                        2020Nat. Methods17261<a target="xrefwindow" href="2020NatMe..17..261V"
+                           id="d5e702">2020NatMe..17..261V</a>10.1038/s41592-019-0686-2
+                     </p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="ref-label cell">
+                     <p class="ref-label"><span class="label"><span class="generated">18</span></span>&nbsp;<a id="R15">
+                           <!-- named anchor -->
+                        </a></p>
+                  </div>
+                  <div class="ref-content cell">
+                     <p class="citation"><a id="d5e707">
+                           <!-- named anchor -->
+                        </a>
+                        M. Waskom
+                        O. Botvinnik
+                        D. O’Kane
+
+                        2018mwaskom/seaborn, v0.9.0Zenodo, doi:<a target="xrefwindow"
+                           href="https://doi.org/10.5281/zenodo.1313201" id="d5e736">10.5281/zenodo.1313201</a>
+
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="article1-footer" class="footer">
+      <hr class="part-rule">
+      <div class="branding">
+         <p>This display is generated from NISO JATS XML with <b>jatskit-html.xsl</b>. The XSLT engine is Saxonica.
+         </p>
+      </div>
+   </div>
+</body>
+
+</html>
