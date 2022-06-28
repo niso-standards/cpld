@@ -124,7 +124,7 @@
         "id": "examples-1-basic-article-docid",
         "type": "RetrievalTest",
         "description": "Extract document ID from example basic article",
-        "input": "cpld-niso.html",
+        "input": "examples/1-basic-article/cpld-niso.html",
         "property": "docid",
         "output": "cpld-niso-docid.txt"
     }

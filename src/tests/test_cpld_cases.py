@@ -22,7 +22,7 @@ def load_cases():
 
     cases = []
     for test_case in manifest:
-
+        test_case['base_dir'] = os.path.join(DATA_DIR, os.path.dirname(test_case['input']))
         for loadable in ['input', 'output', 'html_output', 'jsonld_output', 'nquads_output']:
             if loadable in test_case:
                 test_case[loadable] = read_file(test_case[loadable])
@@ -81,7 +81,7 @@ def retrieval_case(request):
 def test_retrieval_tests(retrieval_case):
     """Parametrized with all retrieval cases with property and output"""
     
-    document = Document.from_data(retrieval_case['input'], base_folder=DATA_DIR)
+    document = Document.from_data(retrieval_case['input'], base_folder=retrieval_case['base_dir'])
 
     property_value = document.get(retrieval_case['property'])
 
@@ -89,7 +89,7 @@ def test_retrieval_tests(retrieval_case):
 
 def test_comparison_tests(comparison_case):
     """Parametrized with all comparison cases with input/output"""
-    document = Document.from_data(comparison_case['input'], base_folder=DATA_DIR)
+    document = Document.from_data(comparison_case['input'], base_folder=comparison_case['base_dir'])
 
     if 'html_output' in comparison_case:
         output = document.get_raw_html()
@@ -108,7 +108,7 @@ def test_negative_tests(negative_case):
     """Parametrized with all negative cases with input"""
 
     try:
-        document = Document.from_data(negative_case['input'], base_folder=DATA_DIR)
+        document = Document.from_data(negative_case['input'], base_folder=negative_case['base_dir'])
         success = False
     except Exception as e:
         if type(e).__name__ == negative_case['raises']:
