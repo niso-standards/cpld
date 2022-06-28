@@ -144,8 +144,9 @@
             "id": "person:pb5498a",
             "type": "schema:Person",
             "identifier": {
-                "type": "identifier:ORCID",
-                "value": "0000-0003-2739-1921"
+                "type": "schema:PropertyValue",
+                "schema:propertyID": "ORCID",
+                "schema:value":  "0000-0003-2739-1921"
             },
             "sameAs": "doc:b5498a300eb5932ad31d0aafcf1d6561",
             "schema:email": "beilar.cranorin@tismec.edu",
@@ -160,8 +161,9 @@
             "schema:affiliation": {
                 "id": "organization:oba882f",
                 "identifier": {
-                    "type": "identifier:ECR",
-                    "value": "ECR-10365836"
+                    "type": "schema:PropertyValue",
+                    "schema:propertyID": "ECR",
+                    "schema:value":  "ECR-10365836"
                 },
                 "sameAs": "doc:ba882fa43c872398e1d54b0715499c66",
                 "type": "Organization",
@@ -179,8 +181,9 @@
             "id": "person:p6eebfb",
             "type": "schema:Person",
             "identifier": {
-                "type": "identifier:ORCID",
-                "value": "0000-0002-1339-2454"
+                "type": "schema:PropertyValue",
+                "schema:propertyID": "ORCID",
+                "schema:value":  "0000-0002-1339-2454"
             },
             "sameAs": "doc:6eebfbc2b459ccaba7271bd524eb76f3",
             "schema:givenName": "Deulara",
@@ -194,8 +197,9 @@
             "schema:affiliation": {
                 "id": "organization:o1c9b4c",
                 "identifier": {
-                    "type": "identifier:ECR",
-                    "value": "ECR-10330785"
+                    "type": "schema:PropertyValue",
+                    "schema:propertyID": "ECR",
+                    "schema:value":  "ECR-10330785"
                 },
                 "sameAs": "doc:1c9b4c186cf5337ac116cc2d248df3b5",
                 "type": "Organization",
@@ -216,8 +220,9 @@
             "id": "work:gyft45",
             "type": "Article",
             "identifier": {
-                "type": "identifier:DOI",
-                "value": "99.x637277b/112233493517690454"
+                "type": "schema:PropertyValue",
+                "schema:propertyID": "DOI",
+                "schema:value":  "99.x637277b/112233493517690454"
             },
             "schema:title": "School-age elves' perception of the elevator experience",
             "sameAs": "doc:161b2168513c46d6cca50d5955d6289d",

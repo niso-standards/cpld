@@ -1,0 +1,50 @@
+{
+    "@context": ["cpld-niso-context.jsonld", "includes/anno_slim.jsonld", { "doc": "https://cpld.example.com/document/3a2b3c#" } ],
+    "id": "https://cpld.example.com/document/3a2b3c",
+    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "type": "schema:Article",
+    "schema:title": "A description of approachable magicians: An exploratory study, the voice of the elevated elf",
+    "rights": "Elsevier Inc.",
+    "keyword": ["approachable", "magicians", "elevated elf", "pastafari, communication"],
+    "hasPart": [
+        {
+            "id": "doc:h1_1",
+            "type": "Title"
+        },     
+        {
+            "id": "doc:section_1",
+            "type": "Introduction"
+        }
+    ],
+    "schema:author": [
+        {
+            "id": "person:rinkehoekstra",
+            "type": "schema:Person",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "ORCID",
+                "value":  "0000-0001-7076-9083"
+            },
+            "schema:email": "r.hoekstra@elsevier.com",
+            "schema:givenName": "Rinke J.",
+            "initials": "R.J.",
+            "schema:familyName": "Hoekstra",
+            "schema:honorificSuffix": [
+                "PhD"
+            ],
+            "schema:name": "Rinke J. Hoekstra",
+            "schema:affiliation": {
+                "id": "organization:elsevier",
+                "type": "Organization",
+                "schema:name": "Elsevier B.V.",
+                "schema:homePage": "https://www.elsevier.com",
+                "schema:address": {
+                    "schema:streetAddress": "Radarweg 29a",
+                    "postalCode": "1043NX",
+                    "schema:addressCountry": "The Netherlands",
+                    "schema:addressLocality": "Amsterdam"
+                }
+            }
+        }
+    ]
+}
