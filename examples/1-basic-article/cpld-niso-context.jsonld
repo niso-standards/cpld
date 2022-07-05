@@ -146,7 +146,6 @@
         "NarrativeAnnotation": "cpld:NarrativeAnnotation",
         "SemanticAnnotation": "cpld:SemanticAnnotation",
 
-
         "hasPart": {
             "@id": "schema:hasPart",
             "@type": "@id"
@@ -167,7 +166,6 @@
             "@type": "xsd:anyURI"
         },
         "rights": {
-            "@type": "@id",
             "@id": "dct:rights"
         },
         "createdWith": {
