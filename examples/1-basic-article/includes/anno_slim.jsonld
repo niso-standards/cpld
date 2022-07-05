@@ -12,7 +12,7 @@
        "iana":    "http://www.iana.org/assignments/relation/",
        "owl":     "http://www.w3.org/2002/07/owl#",
        "as":      "http://www.w3.org/ns/activitystreams#",
-       "schema":  "http://schema.org/",
+       "schema":  "https://schema.org/",
        
        "id":      {"@type": "@id", "@id": "@id"},
        "type":    {"@type": "@id", "@id": "@type"},
