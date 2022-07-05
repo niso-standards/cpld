@@ -108,9 +108,9 @@
             "type": "Reference"
         },
         {
-            "id": "doc:bb010",
+            "id": "doc:bb0010",
             "type": "Reference",
-            "renditionOf": "work:gyft45",
+            "renders": "work:gyft45",
             "mentions": [
                 "person:pb5498a",
                 "person:p6eebfg",
