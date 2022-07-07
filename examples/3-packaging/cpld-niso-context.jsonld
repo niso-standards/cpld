@@ -166,7 +166,6 @@
             "@type": "xsd:anyURI"
         },
         "rights": {
-            "@type": "@id",
             "@id": "dct:rights"
         },
         "createdWith": {
