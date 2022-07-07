@@ -7,7 +7,7 @@
         <meta name="dct.rights" content="NISO" />
         <title>A very simple example to showcase "packaging"</title>
         <link type="application/ld+json" rel="describedby" href="example3.jsonld" />
-        <link rel="stylesheet" href="css/example3.css"/>
+        <link rel="stylesheet" href="media/css/example3.css"/>
     </head>
     <body>
         <header id="header_1">
@@ -29,6 +29,9 @@
                 <li>A css file</li>
                 <li>Four web font files (the Atkinson Hyperlegible font, developed by the US Braille Institute)</li>
             </ul>
+            <p class="serif">
+                This means that this paragraph can use a different font than the default.
+            </p>
             <p id="p_3">
                 The <code>manifest.json</code> file stitches everything together. As an example, it's using both a direct mention (of the <code>example3.css</code> file) and <code>LinkedResource</code> elements for the other elements.
             </p>
@@ -38,7 +41,7 @@
             <h2 id="h2_1">Pastafari Wizard</h2>
             <p id="p_5">And now, the moment we've all been waiting for: a picture of a magical elf and a pastafari wizard. Courtesy of DALL-E mini.</p>
             <figure id="figure_1">
-                <img id="image_1" src="/media/dallemini_elf_wizard.png"
+                <img id="image_1" src="media/dallemini_elf_wizard.png"
                         alt="DALL-E Mini image of a magical elf and a pastafari wizard">
                 <figcaption>A magical elf and a pastafari wizard</figcaption>
             </figure>

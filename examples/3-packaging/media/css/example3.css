@@ -28,5 +28,9 @@
 }
 
 body {
-    font-family: "Atkinson Hyperlegible"
+    font-family: "Atkinson Hyperlegible";
+}
+
+p.serif {
+    font-family: "Serif";
 }
