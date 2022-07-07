@@ -2,11 +2,11 @@
   "name": "cpld-viewer",
   "displayName": "CP/LD Viewer",
   "description": "VSCode Extension for Content Profiles / Linked Documents",
-  "publisher": "Elsevier",
+  "publisher": "NISO",
   "license": "SEE LICENSE IN LICENSE.md",
-  "repository": "https://github.com/elsevierlabs-os/cpld-viewer.git",
+  "repository": "https://github.com/niso-standards/cpld.git",
   "icon": "media/img/cpld-icon.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.61.0"
   },
