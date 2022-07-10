@@ -1,6 +1,7 @@
 import pytest
 import json
 import os.path
+import re
 import warnings
 from ..cpld.document import *
 
@@ -22,10 +23,10 @@ def load_cases():
 
     cases = []
     for test_case in manifest:
-        test_case['base_dir'] = os.path.join(DATA_DIR, os.path.dirname(test_case['input']))
-        for loadable in ['input', 'output', 'html_output', 'jsonld_output', 'nquads_output']:
-            if loadable in test_case:
-                test_case[loadable] = read_file(test_case[loadable])
+        test_case['base_dir'] = os.path.join(DATA_DIR, os.path.dirname(test_case['input_file']))
+        for loadable in ['input_file', 'output_file', 'html_output_file', 'jsonld_output_file', 'nquads_output_file']:
+            if loadable in test_case: 
+                test_case[re.sub('_file$', '', loadable)] = read_file(test_case[loadable])
 
         cases.append(test_case)
 
@@ -33,13 +34,13 @@ def load_cases():
 
 
 def filter_comparison_cases(cases):
-    return [case for case in cases if case['type'] == COMPARISON_TEST and 'input' in case and ('html_output' in case or 'jsonld_output' in case)]
+    return [case for case in cases if case['type'] == COMPARISON_TEST and 'input_file' in case and ('html_output_file' in case or 'jsonld_output_file' in case)]
 
 def filter_negative_cases(cases):
-    return [case for case in cases if case['type'] == NEGATIVE_TEST and 'input' in case]
+    return [case for case in cases if case['type'] == NEGATIVE_TEST and 'input_file' in case]
 
 def filter_retrieval_cases(cases):
-    return [case for case in cases if case['type'] == RETRIEVAL_TEST and 'input' in case and 'output' in case]
+    return [case for case in cases if case['type'] == RETRIEVAL_TEST and 'input_file' in case and ('output' in case or 'output_file' in case)]
 
 
 def pytest_generate_tests(metafunc):
