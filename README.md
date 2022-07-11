@@ -2,6 +2,11 @@
 
 This repository contains examples and a test suite for implementations of the Content Profile and Linked Document standard
 
+## CP/LD Viewer
+
+The `viewer` directory of this repository contains the source code of the CP/LD Viewer extension to Visual Studio Code. 
+
+Have a look at the <viewer/README.md> for installation and usage instructions. 
 
 ## Test Suite
 
