@@ -1,0 +1,139 @@
+{
+    "@context": ["cpld-niso-context.jsonld", "includes/anno_slim.jsonld", { "doc": "https://cpld.example.com/document/1a2b3c#" } ],
+    "id": "https://cpld.example.com/document/1a2b3c",
+    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "type": "schema:Article",
+    "schema:title": "Example Data Linking Article",
+    "rights": "IOP Publishing",   
+    "hasPart": [
+        {
+            "id": "doc:title",
+            "type": "Title"
+        },        
+        {
+            "id": "doc:abstract",
+            "type": "Abstract"
+        },
+             
+        {
+            "id": "doc:contrib1",
+            "type": "AuthorName",
+            "mentions": "person:p001"
+        },      
+        {
+            "id": "doc:aff1",
+            "type": "Affiliation",
+            "mentions": "organization:oba882f"
+        },              
+       {
+            "id": "doc:intro",
+            "type": "Introduction"
+        },         
+        {
+            "id": "doc:ack",
+            "type": "Acknowledgment"
+        },
+        {
+            "id": "doc:ref",
+            "type": "References"
+        },
+        {
+            "id": "doc:ref1",
+            "type": "Reference"
+        }, 
+        {
+            "id": "doc:ref2",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref3",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref4",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref5",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref6",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref7",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref8",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref9",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref10",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref11",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref12",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref13",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref14",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref15",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref16",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref17",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref18",
+            "type": "Reference"
+        }              
+    ],
+    "schema:author": [
+        {
+            "id": "person:p001",
+            "type": "schema:Person",
+            "identifier": {
+                "type": "schema:PropertyValue",
+                "schema:propertyID": "ORCID",
+                "schema:value":  "0000-0000-0000-0001"
+            },
+            "schema:email": "joe.bloggs@email.com",
+            "schema:givenName": "Joe",
+            "initials": "J",
+            "schema:familyName": "Bloggs",            
+            "schema:name": "Joe Bloggs",
+            "schema:affiliation": {
+                "id": "organization:oba882f",
+                "identifier": {
+                    "type": "schema:PropertyValue",
+                    "schema:propertyID": "ECR",
+                    "schema:value":  "ECR-10365836"
+                },
+                "type": "Organization",
+                "schema:name": "National Research"
+            }
+        }       
+    ]
+}

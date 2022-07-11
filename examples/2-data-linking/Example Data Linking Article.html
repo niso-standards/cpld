@@ -2,7 +2,7 @@
   PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
       <title>Bloggs: Example Data Linking Article</title><style type="text/css">
       
 
@@ -232,7 +232,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
    <body>
       <div id="article1-front" class="front">
          <div class="page-header">
-            <h1 class="page-title">Example Data Linking Article</h1>
+            <h1 class="page-title" id="title">Example Data Linking Article</h1>
             <h3 class="page-authors">Joe Bloggs</h3>
          </div>
          <div class="metadata journal-meta">
@@ -266,10 +266,10 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                </div>
                <div class="grid">
                   <p class="label generated">Contributor Group</p>
-                  <div class="grid">
+                  <div class="grid">                    
                      <p class="label generated">Contributor [contrib-type=author; corresp=yes; xlink:type=simple]</p>
                      <p class="grid"><span class="generated">Contributor Identifier: </span>0000-0000-0000-0001<span class="generated smaller"> [contrib-id-type=orcid; authenticated=false]</span></p>
-                     <div class="grid">
+                     <div class="grid" id="contrib1">
                         <p class="label generated">Name of Person [name-style=western]</p>
                         <p class="grid"><span class="generated">Surname: </span>Bloggs
                         </p>
@@ -280,7 +280,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                      <p class="grid"><span class="generated">Email Address: </span>joe.bloggs@email.com
                      </p>
                   </div>
-                  <p class="grid"><span class="generated">Affiliation: </span>
+                  <p class="grid" id="aff1"><span class="generated">Affiliation: </span>
                      <span class="generated">[</span>1<span class="generated">] </span>National Research<span class="generated smaller"> [id=affiliation01]</span></p>
                </div>
                <div class="grid">
@@ -295,7 +295,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                <p class="grid"><span class="generated">Issue Number: </span>1
                </p>
                <p class="grid"><span class="generated">Electronic Location Identifier: </span>1<span class="generated smaller"> [content-type=artnum]</span></p>
-               <div class="grid">
+               <div class="grid" id="abstract">
                   <p class="label generated">Abstract</p>
                   <p class="grid"><span class="generated">Title: </span>Abstract
                   </p>
@@ -327,7 +327,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
          </div>
       </div>
       <div id="article1-body" class="body">
-         <div class="section"><a id="s1">
+         <div class="section" id="intro"><a id="s1">
                <!-- named anchor --></a><h2 class="main-title">Introduction</h2>
             <h5 class="label">1.</h5>
             <p id="d5e77">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus augue in
@@ -344,7 +344,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                sed magna.
             </p>
          </div>
-         <div class="section"><a id="s2">
+         <div class="section" id="Obser"><a id="s2">
                <!-- named anchor --></a><h2 class="main-title">Observations and Analysis</h2>
             <h5 class="label">2.</h5>
             <p id="d5e84">Ut sed ligula vel quam tempor mollis. Phasellus egestas tellus ut mollis tempor.
@@ -362,7 +362,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
          </div>
       </div>
       <div id="article1-back" class="back">
-         <div class="back-section"><a id="d5e87">
+         <div class="back-section" id="ack"><a id="d5e87">
                <!-- named anchor --></a><h2 class="main-title">Acknowledgements</h2>
             <p class="first" id="d5e88">This research makes use of version 0.9.5 (Mumford et al. <a href="#R1">2018</a>) of sunpy, an open-source and free community-developed
                solar data analysis package written in Python (The SunPy Community et al. <a href="#R2">2020</a>). We use v0.9.5 in this work, to maintain
@@ -390,10 +390,10 @@ td, th { border-color: black; border-width: thin; padding: 5px }
             </p>
          </div>
          <div class="back-section"><a id="d5e165">
-               <!-- named anchor --></a><div class="section ref-list"><a id="d5e165">
+               <!-- named anchor --></a><div class="section ref-list" id="ref"><a id="d5e165a">
                   <!-- named anchor --></a><h2 class="main-title">References</h2>
                <div class="ref-list table">
-                  <div class="row">
+                  <div class="row" id="ref1">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">1</span></span>&nbsp;<a id="R3">
                               <!-- named anchor --></a></p>
@@ -408,7 +408,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref2">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">2</span></span>&nbsp;<a id="R10">
                               <!-- named anchor --></a></p>
@@ -425,7 +425,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref3">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">3</span></span>&nbsp;<a id="R19">
                               <!-- named anchor --></a></p>
@@ -439,7 +439,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref4">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">4</span></span>&nbsp;<a id="R7">
                               <!-- named anchor --></a></p>
@@ -456,7 +456,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref5">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">5</span></span>&nbsp;<a id="R8">
                               <!-- named anchor --></a></p>
@@ -473,7 +473,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref6">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">6</span></span>&nbsp;<a id="R14">
                               <!-- named anchor --></a></p>
@@ -490,7 +490,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref7">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">7</span></span>&nbsp;<a id="R11">
                               <!-- named anchor --></a></p>
@@ -506,7 +506,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref8">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">8</span></span>&nbsp;<a id="R9">
                               <!-- named anchor --></a></p>
@@ -519,7 +519,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref9">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">9</span></span>&nbsp;<a id="R1">
                               <!-- named anchor --></a></p>
@@ -536,7 +536,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref10">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">10</span></span>&nbsp;<a id="R13">
                               <!-- named anchor --></a></p>
@@ -552,7 +552,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref11">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">11</span></span>&nbsp;<a id="R12">
                               <!-- named anchor --></a></p>
@@ -565,7 +565,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref12">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">12</span></span>&nbsp;<a id="R6">
                               <!-- named anchor --></a></p>
@@ -581,7 +581,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref13">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">13</span></span>&nbsp;<a id="R4">
                               <!-- named anchor --></a></p>
@@ -595,7 +595,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref14">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">14</span></span>&nbsp;<a id="R5">
                               <!-- named anchor --></a></p>
@@ -611,7 +611,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref15">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">15</span></span>&nbsp;<a id="R2">
                               <!-- named anchor --></a></p>
@@ -627,7 +627,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref16">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">16</span></span>&nbsp;<a id="R17">
                               <!-- named anchor --></a></p>
@@ -644,7 +644,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref17">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">17</span></span>&nbsp;<a id="R18">
                               <!-- named anchor --></a></p>
@@ -660,7 +660,7 @@ td, th { border-color: black; border-width: thin; padding: 5px }
                         </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="ref18">
                      <div class="ref-label cell">
                         <p class="ref-label"><span class="label"><span class="generated">18</span></span>&nbsp;<a id="R15">
                               <!-- named anchor --></a></p>
@@ -682,11 +682,11 @@ td, th { border-color: black; border-width: thin; padding: 5px }
          </div>
       </div>
       <div id="article1-footer" class="footer">
-         <hr class="part-rule">
+         <hr class="part-rule"/>
          <div class="branding">
             <p>This display is generated from NISO JATS XML with <b>jatskit-html.xsl</b>. The XSLT engine is Saxonica.
             </p>
-         </div>
+         </div>       
       </div>
    </body>
 </html>
