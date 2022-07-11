@@ -33,21 +33,20 @@ def load_cases():
     return cases
 
 
-def filter_comparison_cases(cases):
-    return [case for case in cases if case['type'] == COMPARISON_TEST and 'input_file' in case and ('html_output_file' in case or 'jsonld_output_file' in case)]
+CASE_FILTERS = {
+    COMPARISON_TEST: lambda case: 'input_file' in case and any([p in case for p in ['html_output', 'html_output_file', 'jsonld_output', 'jsonld_output_file']]),
+    NEGATIVE_TEST:   lambda case: 'input_file' in case and 'raises' in case,
+    RETRIEVAL_TEST:  lambda case: 'input_file' in case and any([p in case for p in ['output', 'output_file']]),
+}
 
-def filter_negative_cases(cases):
-    return [case for case in cases if case['type'] == NEGATIVE_TEST and 'input_file' in case]
-
-def filter_retrieval_cases(cases):
-    return [case for case in cases if case['type'] == RETRIEVAL_TEST and 'input_file' in case and ('output' in case or 'output_file' in case)]
-
+def filter_cases(cases, test_type):
+    return [case for case in cases if case['type'] == test_type and CASE_FILTERS[test_type](case)]
 
 def pytest_generate_tests(metafunc):
     cases = load_cases()
-    comparison_cases = filter_comparison_cases(cases)
-    negative_cases = filter_negative_cases(cases)
-    retrieval_cases = filter_retrieval_cases(cases)
+    comparison_cases = filter_cases(cases, COMPARISON_TEST)
+    negative_cases = filter_cases(cases, NEGATIVE_TEST)
+    retrieval_cases = filter_cases(cases, RETRIEVAL_TEST)
 
     unsupported_cases = [case for case in cases if not case in comparison_cases + negative_cases + retrieval_cases]
 
