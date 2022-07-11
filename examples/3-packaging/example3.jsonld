@@ -24,7 +24,7 @@
             "id": "person:rinkehoekstra",
             "type": "schema:Person",
             "schema:identifier": {
-                "@type": "PropertyValue",
+                "@type": "schema:PropertyValue",
                 "schema:propertyID": "ORCID",
                 "schema:value":  "0000-0001-7076-9083"
             },
