@@ -1,5 +1,5 @@
 {
-    "@context": ["cpld-niso-context.jsonld", "includes/anno_slim.jsonld", { "doc": "https://cpld.example.com/document/1a2b3c#" } ],
+    "@context": ["cpld-niso-context.jsonld",{ "doc": "https://cpld.example.com/document/1a2b3c#" } ],
     "id": "https://cpld.example.com/document/1a2b3c",
     "conformsTo": "http://cpld.example.com/schema/cpld/",
     "type": "schema:Article",
