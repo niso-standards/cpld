@@ -31,6 +31,7 @@ The tests are captured in the [manifest.json](src/tests/data/manifest.json) usin
 | `description` | A description of what the test tests | 
 | `input_file` | The filename for the data that is to be used as input for the test |
 | `property` | An optional property whose value is to be retrieved (`RetrievalTest` only) |
+| `html_id` | ID of the HTML element which is to be compared (`ComparisonTest` only) |
 | `output_file` | The file containing the expected output of the retrieval (`RetrievalTest` only) |
 | `output` | The expected output of the retrieval (`RetrievalTest` only) |
 | `html_output_file` | The file containing the expected HTML output of a `ComparisonTest` |

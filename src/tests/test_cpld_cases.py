@@ -92,7 +92,10 @@ def test_comparison_tests(comparison_case):
     document = Document.from_data(comparison_case['input'], base_folder=comparison_case['base_dir'])
 
     if 'html_output' in comparison_case:
-        output = document.get_raw_html()
+        if 'html_id' in comparison_case:
+            output = document.get_html_element_by_id(comparison_case['html_id'])
+        else:
+            output = document.get_raw_html()
         assert output == comparison_case['html_output']
 
     if 'jsonld_output' in comparison_case:

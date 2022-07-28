@@ -280,6 +280,9 @@ class Document(object):
     def get_html(self):
         return str(self._soup)
 
+    def get_html_element_by_id(self, html_id):
+        return str(self._soup.find_all(attrs={"id": html_id})[0])
+
     def get_pretty_html(self):
         return self._soup.prettify()
 

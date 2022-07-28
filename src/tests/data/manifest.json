@@ -126,5 +126,13 @@
         "input_file": "examples/1-basic-article/cpld-niso.html",
         "property": "docid",
         "output": "https://cpld.example.com/document/1a2b3c"
+    },
+    {
+        "id": "examples-1-basic-article-html-element",
+        "type": "ComparisonTest",
+        "description": "Compare HTML element retrieved by id",
+        "input_file": "examples/1-basic-article/cpld-niso.html",
+        "html_id": "au0005",
+        "html_output": "<span id=\"au0005\">Beilar J. Cranorin</span>"
     }
 ]
