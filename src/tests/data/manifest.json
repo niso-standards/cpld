@@ -152,5 +152,21 @@
         "subject": "https://cpld.example.com/thing/Person/p6eebfg",
         "predicate": "https://schema.org/name",
         "objects": ["Loravaris, S."]
+    },
+    {
+        "id": "examples-2-basic-article-docid",
+        "type": "RetrievalTest",
+        "description": "Extract document ID from example basic article",
+        "input_file": "examples/2-data-linking/example2.html",
+        "property": "docid",
+        "output": "https://doi.org/10.1088/0000-0000/IOP1"
+    },
+    {
+        "id": "examples-3-basic-article-docid",
+        "type": "RetrievalTest",
+        "description": "Extract document ID from example basic article",
+        "input_file": "examples/3-packaging/example3.html",
+        "property": "docid",
+        "output": "https://cpld.example.com/document/3a2b3c"
     }
 ]
