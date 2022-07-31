@@ -291,3 +291,6 @@ class Document(object):
 
     def get_nquads(self):
         pass
+
+    def get_triple_objects(self, subject, predicate):
+        return self._dataset.objects(subject=URIRef(subject), predicate=URIRef(predicate))

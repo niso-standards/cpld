@@ -12,6 +12,7 @@ DATA_DIR = os.path.join(os.path.relpath(os.path.dirname(__file__)),'data')
 COMPARISON_TEST = "ComparisonTest"
 NEGATIVE_TEST = "NegativeTest"
 RETRIEVAL_TEST = "RetrievalTest"
+TRIPLES_TEST = "TriplesTest"
 
 def read_file(filename):
     with open(os.path.join(DATA_DIR, filename), 'r') as f:
@@ -37,6 +38,7 @@ CASE_FILTERS = {
     COMPARISON_TEST: lambda case: 'input_file' in case and any([p in case for p in ['html_output', 'html_output_file', 'jsonld_output', 'jsonld_output_file']]),
     NEGATIVE_TEST:   lambda case: 'input_file' in case and 'raises' in case,
     RETRIEVAL_TEST:  lambda case: 'input_file' in case and any([p in case for p in ['output', 'output_file']]),
+    TRIPLES_TEST:    lambda case: 'input_file' in case and 'subject' in case and 'predicate' in case and 'objects' in case,
 }
 
 def filter_cases(cases, test_type):
@@ -47,8 +49,9 @@ def pytest_generate_tests(metafunc):
     comparison_cases = filter_cases(cases, COMPARISON_TEST)
     negative_cases = filter_cases(cases, NEGATIVE_TEST)
     retrieval_cases = filter_cases(cases, RETRIEVAL_TEST)
+    triples_cases = filter_cases(cases, TRIPLES_TEST)
 
-    unsupported_cases = [case for case in cases if not case in comparison_cases + negative_cases + retrieval_cases]
+    unsupported_cases = [case for case in cases if not case in comparison_cases + negative_cases + retrieval_cases + triples_cases]
 
 
     if len(unsupported_cases) > 0:
@@ -63,6 +66,8 @@ def pytest_generate_tests(metafunc):
     if "retrieval_case" in metafunc.fixturenames:
         metafunc.parametrize("retrieval_case", retrieval_cases, ids=[case['id'] for case in retrieval_cases], indirect=True)
 
+    if "triples_case" in metafunc.fixturenames:
+        metafunc.parametrize("triples_case", triples_cases, ids=[case['id'] for case in triples_cases], indirect=True)
 
 
 @pytest.fixture
@@ -77,6 +82,9 @@ def negative_case(request):
 def retrieval_case(request):
     return request.param
 
+@pytest.fixture
+def triples_case(request):
+    return request.param
 
 def test_retrieval_tests(retrieval_case):
     """Parametrized with all retrieval cases with property and output"""
@@ -125,4 +133,10 @@ def test_negative_tests(negative_case):
             success = False
 
     assert success
+
+def test_triples_tests(triples_case):
+    document = Document.from_data(triples_case['input'], base_folder=triples_case['base_dir'])
+    triples = sorted([str(t) for t in document.get_triple_objects(triples_case['subject'], triples_case['predicate'])])
+
+    assert triples == sorted(triples_case['objects'])
 

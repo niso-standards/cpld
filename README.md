@@ -41,6 +41,9 @@ The tests are captured in the [manifest.json](src/tests/data/manifest.json) usin
 | `nquads_output_file` | The file containing the expected (sorted) NQuads output of a `ComparisonTest` |
 | `nquads_output` | Expected (sorted) NQuads output of a `ComparisonTest` |
 | `raises` | The name of the expected exception raised in the `NegativeTest` |
+| `subject` | The subject URI of the triple to be tested (`TriplesTest` only) |
+| `predicate` | The predicate URI of the triple to be tested (`TriplesTest` only) |
+| `objects` | Expected objects of the triple (`TriplesTest` only) |
 
 For example, the following instructs a `RetrievalTest` to extract the value for the `docid` property from a CPLD Document instantiated from the `1-html-docid-input.html` file, and compare this value with the contents of the `1-html-docid-output.txt` file:
 
@@ -66,6 +69,7 @@ The [test_cpld_cases.py](src/tests/test_cpld_cases.py) file is a `pytest` implem
 * The `RetrievalTest` retrieves a property value from an instantiated CPLD Document object (from the `input_file` file) and compares it to the value stored in the file indicated by the `output_file` attribute. The Python library implements this using a standard *getter* method on the CPLD Document class.
 * The `ComparisonTest` instantiates a CPLD Document from the `input_file` file, and compares the literal serialization of (part of) that document to the information stored in the `html_output_file`, `jsonld_output_file` or `nquads_output_file` files. It can be used to test roundtripping, or check that all intended RDF triples are properly loaded from the JSON-LD.
 * The `NegativeTest` attempts to instantiate a CPLD Document from the `input_file` file, and expects a specific exception to be raised by the implementation. The test fails if no exception is raised, or if an exception of a different type is raised. The exceptions are currently only documented in the [exceptions.py](src/cpld/exceptions.py) file.
+* The `TriplessTest` retrieves objects of the triples with the given subject and predicate, and compares them with the given objects.
 
 ### Test Documentation
 

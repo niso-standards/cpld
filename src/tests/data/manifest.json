@@ -134,5 +134,23 @@
         "input_file": "examples/1-basic-article/cpld-niso.html",
         "html_id": "au0005",
         "html_output": "<span id=\"au0005\">Beilar J. Cranorin</span>"
+    },
+    {
+        "id": "examples-1-triples-1",
+        "type": "TriplesTest",
+        "description": "Compare the objects of the given subject and predicate",
+        "input_file": "examples/1-basic-article/cpld-niso.html",
+        "subject": "https://cpld.example.com/document/1a2b3c",
+        "predicate": "https://schema.org/author",
+        "objects": ["https://cpld.example.com/thing/Person/pb5498a", "https://cpld.example.com/thing/Person/p6eebfb"]
+    },
+    {
+        "id": "examples-1-triples-2",
+        "type": "TriplesTest",
+        "description": "Compare the objects of the given subject and predicate",
+        "input_file": "examples/1-basic-article/cpld-niso.html",
+        "subject": "https://cpld.example.com/thing/Person/p6eebfg",
+        "predicate": "https://schema.org/name",
+        "objects": ["Loravaris, S."]
     }
 ]
