@@ -1,0 +1,82 @@
+{
+    "@context": [
+        "cpld-niso-context.jsonld",
+        "includes/anno_slim.jsonld",
+        {
+            "doc": "https://ieeexplore.ieee.org/document/8375028#"
+        },
+        {
+            "prism": "http://prismstandard.org/namespaces/basic/2.1/",
+            "fabio": "http://purl.org/spar/fabio/",
+            "frbr": "http://purl.org/vocab/frbr/core#",
+            "application": "http://purl.org/NET/mediatypes/application/"
+        }
+    ],
+    "id": "https://ieeexplore.ieee.org/document/8375028",
+    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "type": "schema:Article",
+    "schema:title": "Blank Page",
+    "rights": { "@id": "https://ieee.org" },
+    "prism:doi": "10.1109/lpt.2018.2838719",
+    "dct:license": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+    "keyword": [
+        "blank page",
+        "ephemera",
+        "white bunny sleeping in a snowfield"
+    ],
+    "hasPart": [
+        {
+            "id": "doc:b1",
+            "type": "Blank"
+        }
+    ],
+    "frbr:embodiment": {
+        "type": "frbr:DigitalManifestation",
+        "dct:publisher": { "@id": "https://ieee.org" },
+        "dct:format": "application:pdf"
+    },
+    "frbr:partOf": {
+        "type": "fabio:JournalIssue",
+        "prism:issueIdentifier": "11",
+        "frbr:embodiment": {
+            "type": "fabio:Paperback",
+            "dct:publisher": { "@id": "https://ieee.org" },
+            "frbr:part": {
+                "type": "fabio:PrintObject",
+                "dct:publisher": { "@id": "https://ieee.org" },
+                "prism:publicationDate": {
+                    "@value": "2018-06-07",
+                    "type": "xsd:date"
+                },
+                "prism:startingPage": "B1068",
+                "prism:endingPage": "B1068"
+            }
+        },
+        "frbr:partOf": {
+            "type": "fabio:JournalVolume",
+            "prism:volume": "30",
+            "frbr:partOF": {
+                "@id": "doi:10.1109/lpt.68"
+            }
+        }        
+    },    
+    "@graph": 
+    [
+        {
+            "@id": "doi:10.1109/lpt.68",
+            "type": "fabio:Journal",
+            "dct:title": "IEEE Photonics Technology Letters",
+            "prism:issn": ["1941-0174", "1041-1135"],
+            "sameAs": ["https://doi.org/10.1109/lpt.68", "urn:issn:1941-0174", "urn:issn:1041-1135"]
+        },
+        {
+            "@id": "https://ieee.org",
+            "foaf:name": ["IEEE", "Institute of Electrical and Electronics Engineers"],
+            "sameAs": [
+                { "@id": "https://ror.org/01n002310" },
+                { "@id": "https://api.crossref.org/funders/100006968" },
+                { "@id": "https://www.wikidata.org/wiki/Q131566" }
+            ]
+        }
+    ]
+}
