@@ -1,0 +1,634 @@
+{
+  "@context" : "http://schema.org",
+  "@type" : "Person",
+  "@id" : "https://orcid.org/0000-0001-7076-9083",
+  "mainEntityOfPage" : "https://orcid.org/0000-0001-7076-9083",
+  "name" : "Rinke Hoekstra",
+  "givenName" : "Rinke",
+  "familyName" : "Hoekstra",
+  "alternateName" : "R.J. Hoekstra, R. Hoekstra",
+  "address" : {
+    "addressCountry" : "NL",
+    "@type" : "PostalAddress"
+  },
+  "@reverse" : {
+    "creator" : [ {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1016/j.jbi.2015.05.005",
+      "name" : "Enhancing reuse of structured eligibility criteria and supporting their relaxation",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1016/j.jbi.2015.05.005"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84938582102"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-662-46641-4_45",
+      "name" : "Hubble: Linked Data Hub for Clinical Decision Support",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84942579374"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-662-46641-4_45"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-319-16462-5_18",
+      "name" : "PROV-O-Viz - Understanding the Role of Activities in Provenance",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84928805759"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-319-16462-5_18"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/s11192-014-1447-8",
+      "name" : "Patents as instruments for exploring innovation dynamics: geographic and technological perspectives on “photovoltaic cells”",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84935096358"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/s11192-014-1447-8"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-319-13704-9_44",
+      "name" : "A Conceptual Model for Detecting Interactions among Medical Recommendations in Clinical Guidelines",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-319-13704-9_44"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "A conceptual model for detecting interactions among medical recommendations in clinical guidelines a case-study on multimorbidity",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84914126892"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1145/2615569.2615654",
+      "name" : "A web observatory for the machine processability of structured data on the web",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84904469252"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1145/2615569.2615654"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-319-12024-9_12",
+      "name" : "Linkitup: Semantic Publishing of Research Data",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84908539036"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-319-12024-9_12"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Preface",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84948650693"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-319-11915-1_6",
+      "name" : "Structural Properties as Proxy for Semantic Relevance in RDF Graph Sampling",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-319-11915-1_6"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Structural properties as proxy for semantic relevance in RDF graph sampling",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84910051477"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "What is linked historical data?",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84914151553"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-319-13704-9_34",
+      "name" : "YASGUI: Feeling the Pulse of Linked Data",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-319-13704-9_34"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "YASGUI: Feeling the pulse of linked data",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84914126869"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.6084/m9.figshare.695949",
+      "name" : "Distribution of Errors Reported by LOD2 LODStats Project",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.6084/m9.figshare.695949"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.6084/m9.figshare.689880",
+      "name" : "A Network Analysis of Dutch Regulations",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.6084/m9.figshare.689880"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.6084/m9.figshare.650421",
+      "name" : "Linked Humanities Data: The Next Frontier?",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.6084/m9.figshare.650421"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Linkitup: Link discovery for research data",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84898926852"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Using semantic web technologies to reproduce a pharmacovigilance case study",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84921914492"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-642-41242-4_7",
+      "name" : "YASGUI: Not Just Another SPARQL Client",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84893809058"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84893807349"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-642-41242-4_7"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "isbn",
+        "value" : "9783642412417"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-642-41242-4_54"
+      } ],
+      "sameAs" : [ "https://www.worldcat.org/isbn/9783642412417", "https://doi.org/10.1007/978-3-642-41242-4_54" ]
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "YASGUI: Not just another SPARQL client?",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84921879094"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.6084/m9.figshare.95961",
+      "name" : "Comparison of Odds Ratios in AERS",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.6084/m9.figshare.95961"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/s10506-012-9119-6",
+      "name" : "A legal case OWL ontology with an instantiation of Popov v. Hayashi",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84861528140"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/s10506-012-9119-6"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Annotating evidence based clinical guidelines: A lightweight ontology",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84922749594"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.3233/978-1-61499-167-0-157",
+      "name" : "Automatic extraction of legal concepts and definitions",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.3233/978-1-61499-167-0-157"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84873118034"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Linked humanities data: The next frontier? A case-study in historical census data",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84922955966"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-94-007-0120-5_4",
+      "name" : "A Cognitive Science Perspective on Legal Ontologies",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-94-007-0120-5_4"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "isbn",
+        "value" : "9789400701199"
+      } ],
+      "sameAs" : "https://www.worldcat.org/isbn/9789400701199"
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Case frames as contextual mappings to case law in bestportal",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84874012074"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-642-25093-4_9",
+      "name" : "The MetaLex document server: Legal documents as versioned linked data",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-80055047345"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-642-25093-4_9"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1111/j.1467-9671.2010.01188.x",
+      "name" : "Spatial Planning on the Semantic Web",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-77956851392"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1111/j.1467-9671.2010.01188.x"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.3233/978-1-60750-682-9-77",
+      "name" : "Case frames as contextual mappings to case law in BestPortal",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-78650314168"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.3233/978-1-60750-682-9-77"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-642-16438-5_23",
+      "name" : "Making sense of design patterns",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-642-16438-5_23"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-78650240876"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1145/1823854.1823874",
+      "name" : "Normative reasoning with geo information",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1145/1823854.1823874"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-77955168005"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Representing social reality in OWL 2?",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84889033037"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.3233/sw-2010-0004",
+      "name" : "The knowledge reengineering bottleneck",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.3233/sw-2010-0004"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84877952577"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.3233/978-1-60750-082-7-69",
+      "name" : "BestPortal: Lessons learned in lightweight semantic access to court proceedings",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.3233/978-1-60750-082-7-69"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-74349116062"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Bestmap: Context-aware Skos vocabulary mappings in OWL 2",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84891434049"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Judging amy: Automated legal assessment using OWL 2",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84885787995"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.3233/978-1-58603-942-4-21",
+      "name" : "LKIF core: Principled ontology development for the legal domain",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-72749088485"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.3233/978-1-58603-942-4-21"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.3233/978-1-60750-013-1-i",
+      "name" : "Ontology representation: Design patterns and ontologies that make sense",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.3233/978-1-60750-013-1-i"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-73649136524"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Reasoning with spatial plans on the semanticweb",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84873802691"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Spatial planning on the Semantic Web",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84891455084"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Use of owl in the legal Domain statement of interest",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84893175450"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Versions and applicability of concept definitions in legal ontologies?",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84893191065"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.3233/978-1-58603-952-3-170",
+      "name" : "Automated legal assessment in OWL 2",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.3233/978-1-58603-952-3-170"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-77249098787"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-540-85569-9_3",
+      "name" : "MetaVex: Regulation Drafting Meets the Semantic Web",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "isbn",
+        "value" : "9783540855682"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-540-85569-9_3"
+      } ],
+      "sameAs" : "https://www.worldcat.org/isbn/9783540855682"
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-540-87696-0_8",
+      "name" : "Polishing Diamonds in OWL 2",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-540-87696-0_8"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "isbn",
+        "value" : "9783540876953"
+      } ],
+      "sameAs" : "https://www.worldcat.org/isbn/9783540876953"
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-540-87696-0-8",
+      "name" : "Polishing diamonds in OWL 2",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-540-87696-0-8"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-56649118845"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/s10506-007-9033-5",
+      "name" : "Commonsense Causal Explanation in a Legal Domain",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/s10506-007-9033-5"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-34547830240"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-540-85569-9-3",
+      "name" : "MetaVex: Regulation drafting meets the semantic web",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-56749174174"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-540-85569-9-3"
+      } ]
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "The LKIF core ontology of basic legal concepts",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84884649550"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1007/978-3-540-46138-8_22",
+      "name" : "Proposal for a Dutch Legal XML Standard",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "isbn",
+        "value" : "9783540441212"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/978-3-540-46138-8_22"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1007/3-540-46138-8_22"
+      } ],
+      "sameAs" : [ "https://www.worldcat.org/isbn/9783540441212", "https://doi.org/10.1007/3-540-46138-8_22" ]
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Requirements for representing situations",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-84884648594"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "name" : "Proposal for a dutch legal xml standard",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-34547940769"
+      }
+    }, {
+      "@type" : "CreativeWork",
+      "@id" : "https://doi.org/10.1145/1568234.1568255",
+      "name" : "Reasoning with spatial plans on the semantic web",
+      "identifier" : [ {
+        "@type" : "PropertyValue",
+        "propertyID" : "doi",
+        "value" : "10.1145/1568234.1568255"
+      }, {
+        "@type" : "PropertyValue",
+        "propertyID" : "eid",
+        "value" : "2-s2.0-70450208450"
+      } ]
+    } ]
+  },
+  "url" : "http://www.rinkehoekstra.nl",
+  "identifier" : [ {
+    "@type" : "PropertyValue",
+    "propertyID" : "Scopus Author ID",
+    "value" : "18535498500"
+  }, {
+    "@type" : "PropertyValue",
+    "propertyID" : "ResearcherID",
+    "value" : "E-1449-2013"
+  }, {
+    "@type" : "PropertyValue",
+    "propertyID" : "ISNI",
+    "value" : "0000000071769096"
+  } ]
+}
