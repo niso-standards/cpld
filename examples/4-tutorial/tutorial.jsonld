@@ -1,0 +1,34 @@
+{
+    "@context": [
+        "../1-basic-article/cpld-niso-context.jsonld", 
+        { "doc": "https://cpld.example.com/document/1a2b3c#" } 
+    ],
+    "@graph": [
+        {
+            "id": "https://cpld.example.com/document/1a2b3c",
+            "conformsTo": "http://cpld.example.com/schema/cpld/",
+            "type": "schema:Article",
+            "author": {
+                "id": "https://orcid.org/0000-0001-7076-9083",
+                "type": "Person",
+                "givenName": "Rinke",
+                "familyName": "Hoekstra"
+            },
+            "hasPart": [
+                {"id": "doc:el1", "type": "Title"},
+                {"id": "doc:el2", "type": "AuthorName", "mentions": "https://orcid.org/0000-0001-7076-9083"}
+            ]
+        },
+        {
+            "type": "oa:Annotation",
+            "id": "doc:ann1",
+            "oa:hasTarget": {"id": "doc:el1"},
+            "oa:hasBody": {
+                "type": "rdf:Statement",
+                "rdf:subject": { "id": "https://cpld.example.com/document/1a2b3c"},
+                "rdf:predicate": { "id": "schema:title" },
+                "rdf:object": "CP/LD Tutorial"
+            }
+        }
+    ]
+}
