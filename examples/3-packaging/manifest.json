@@ -15,7 +15,7 @@
     ],
 
     "resources": [
-        "css/example3.css",
+        "media/css/example3.css",
         {
             "type": "LinkedResource",
             "url": "example3.html"
@@ -39,40 +39,40 @@
         },
         {
             "type": "LinkedResource",
-            "url": "fonts/Atkinson-Hyperlegible-Regular-102.eot",
+            "url": "media/fonts/Atkinson-Hyperlegible-Regular-102.eot",
             "encodingFormat": "application/vnd.ms-fontobject"
         },{
             "type": "LinkedResource",
-            "url": "fonts/Atkinson-Hyperlegible-Regular-102a.woff2",
+            "url": "media/fonts/Atkinson-Hyperlegible-Regular-102a.woff2",
             "encodingFormat": "font/woff2"
         },{
             "type": "LinkedResource",
-            "url": "fonts/Atkinson-Hyperlegible-Bold-102.eot",
+            "url": "media/fonts/Atkinson-Hyperlegible-Bold-102.eot",
             "encodingFormat": "application/vnd.ms-fontobject"
         },{
             "type": "LinkedResource",
-            "url": "fonts/Atkinson-Hyperlegible-Bold-102a.woff2",
+            "url": "media/fonts/Atkinson-Hyperlegible-Bold-102a.woff2",
             "encodingFormat": "font/woff2"
         },{
             "type": "LinkedResource",
-            "url": "fonts/Atkinson-Hyperlegible-Italic-102.eot",
+            "url": "media/fonts/Atkinson-Hyperlegible-Italic-102.eot",
             "encodingFormat": "application/vnd.ms-fontobject"
         },{
             "type": "LinkedResource",
-            "url": "fonts/Atkinson-Hyperlegible-Italic-102a.woff2",
+            "url": "media/fonts/Atkinson-Hyperlegible-Italic-102a.woff2",
             "encodingFormat": "font/woff2"
         },{
             "type": "LinkedResource",
-            "url": "fonts/Atkinson-Hyperlegible-BoldItalic-102.eot",
+            "url": "media/fonts/Atkinson-Hyperlegible-BoldItalic-102.eot",
             "encodingFormat": "application/vnd.ms-fontobject"
         },{
             "type": "LinkedResource",
-            "url": "fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2",
+            "url": "media/fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2",
             "encodingFormat": "font/woff2"
         },
         {
             "type": "LinkedResource",
-            "url": "fonts/OFL.txt",
+            "url": "media/fonts/OFL.txt",
             "encodingFormat": "text/plain"
         }
     ]
