@@ -123,7 +123,7 @@
                     >github.com/rice-solar-physics/synthetic-observables-paper-observations</ext-link>.</p>
             <p>
                 <italic toggle="yes">Facility:</italic>
-                <named-content content-type="facility" xlink:href="https://sdo.gsfc.nasa.gov/"
+                <named-content id="fac1" content-type="facility" xlink:href="https://sdo.gsfc.nasa.gov/"
                     xlink:type="simple">SDO(AIA).</named-content>
             </p>
             <p>

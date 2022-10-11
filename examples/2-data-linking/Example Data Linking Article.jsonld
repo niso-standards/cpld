@@ -34,12 +34,11 @@
             "type": "Acknowledgment"
         },
         {
-            "id": "doc:ref",
-            "type": "References"
-        },
-        {
             "id": "doc:ref1",
-            "type": "Reference"
+            "type": "Reference",
+            "name": "sunpy/sunpy v0.9.5",
+            "schema:codeRepository": "10.5281/zenodo.2155946",
+            "schema:programmingLanguage": "Python"
         }, 
         {
             "id": "doc:ref2",
@@ -51,7 +50,10 @@
         },  
         {
             "id": "doc:ref4",
-            "type": "Reference"
+            "type": "Reference",
+            "name": "astropy/astropy, v3.1",
+            "schema:codeRepository": "10.5281/zenodo.4080996",
+            "schema:programmingLanguage": "Python"
         },  
         {
             "id": "doc:ref5",
@@ -59,11 +61,17 @@
         },  
         {
             "id": "doc:ref6",
-            "type": "Reference"
+            "type": "Reference",
+            "name": "Dask: Parallel Computation with Blocked algorithms and Task Scheduling",
+            "schema:codeRepository": "10.25080/Majora-7b98e3ed-013",
+            "schema:programmingLanguage": "Python"
         },  
         {
             "id": "doc:ref7",
-            "type": "Reference"
+            "type": "Reference",
+            "name": "sunpy/drms: drms v0.5.6",
+            "schema:codeRepository": "10.5281/zenodo.2572850",
+            "schema:programmingLanguage": "Python"
         },  
         {
             "id": "doc:ref8",
@@ -75,7 +83,10 @@
         },  
         {
             "id": "doc:ref10",
-            "type": "Reference"
+            "type": "Reference",
+            "name": "matplotlib/matplotlib, v3.0.2",
+            "schema:codeRepository": "10.5281/zenodo.1482099",
+            "schema:programmingLanguage": "Python"
         },  
         {
             "id": "doc:ref11",
@@ -91,11 +102,17 @@
         },  
         {
             "id": "doc:ref14",
-            "type": "Reference"
+            "type": "Reference",
+            "name": "scikit-learn/scikit-learn: Scikit-learn 0.20.3",
+            "schema:codeRepository": "10.5281/zenodo.2582066",
+            "schema:programmingLanguage": "Python"
         },  
         {
             "id": "doc:ref15",
-            "type": "Reference"
+            "type": "Reference",
+            "name": "mwaskom/seaborn: v0.9.0 (July 2018)",
+            "schema:codeRepository": "10.5281/zenodo.1313201",
+            "schema:programmingLanguage": "Python"
         },  
         {
             "id": "doc:ref16",
@@ -103,7 +120,10 @@
         },  
         {
             "id": "doc:ref17",
-            "type": "Reference"
+            "type": "Reference",
+            "name": "scipy/scipy, v1.1.0",
+            "schema:codeRepository": "10.5281/zenodo.1241501",
+            "schema:programmingLanguage": "Python"
         },  
         {
             "id": "doc:ref18",
@@ -135,5 +155,14 @@
                 "schema:name": "National Research"
             }
         }       
+    ],
+    "schema:place":[
+        {
+            "id":"doc:fac1",
+            "type":"schema:Place",
+            "schema:name": "Solar Dynamics Observatory: SDO",
+            "schema:url":"https://sdo.gsfc.nasa.gov/",
+            "schema:description":"Since its launch in 2010, NASA's Solar Dynamics Observatory, or SDO, has studied how the Sun creates solar activity and drives space weather -- the dynamic conditions in space that impact the entire solar system, including Earth."
+        }
     ]
 }
