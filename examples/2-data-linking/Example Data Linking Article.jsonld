@@ -1,6 +1,6 @@
 {
-    "@context": ["cpld-niso-context.jsonld",{ "doc": "https://cpld.example.com/document/1a2b3c#" } ],
-    "id": "https://cpld.example.com/document/1a2b3c",
+    "@context": ["cpld-niso-context.jsonld",{ "doc": "https://doi.org/10.1088/0000-0000/IOP1#" } ],
+    "id": "https://doi.org/10.1088/0000-0000/IOP1",
     "conformsTo": "http://cpld.example.com/schema/cpld/",
     "type": "schema:Article",
     "schema:title": "Example Data Linking Article",
@@ -36,9 +36,12 @@
         {
             "id": "doc:ref1",
             "type": "Reference",
-            "name": "sunpy/sunpy v0.9.5",
-            "schema:codeRepository": "10.5281/zenodo.2155946",
-            "schema:programmingLanguage": "Python"
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.2155946",
+                "name": "sunpy/sunpy v0.9.5",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.2155946",
+                "schema:programmingLanguage": "Python"
+            }
         }, 
         {
             "id": "doc:ref2",
@@ -51,9 +54,12 @@
         {
             "id": "doc:ref4",
             "type": "Reference",
-            "name": "astropy/astropy, v3.1",
-            "schema:codeRepository": "10.5281/zenodo.4080996",
-            "schema:programmingLanguage": "Python"
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.4080996",
+                "name": "astropy/astropy, v3.1",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.4080996",
+                "schema:programmingLanguage": "Python"
+            }
         },  
         {
             "id": "doc:ref5",
@@ -62,16 +68,23 @@
         {
             "id": "doc:ref6",
             "type": "Reference",
-            "name": "Dask: Parallel Computation with Blocked algorithms and Task Scheduling",
-            "schema:codeRepository": "10.25080/Majora-7b98e3ed-013",
-            "schema:programmingLanguage": "Python"
+            "mentions": {
+                "id": "https://doi.org/10.25080/Majora-7b98e3ed-013",
+                "name": "Dask: Parallel Computation with Blocked algorithms and Task Scheduling",
+                "schema:codeRepository": "https://doi.org/10.25080/Majora-7b98e3ed-013",
+                "schema:programmingLanguage": "Python"
+            }
+            
         },  
         {
             "id": "doc:ref7",
             "type": "Reference",
-            "name": "sunpy/drms: drms v0.5.6",
-            "schema:codeRepository": "10.5281/zenodo.2572850",
-            "schema:programmingLanguage": "Python"
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.2572850",
+                "name": "sunpy/drms: drms v0.5.6",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.2572850",
+                "schema:programmingLanguage": "Python"
+            }
         },  
         {
             "id": "doc:ref8",
@@ -84,9 +97,12 @@
         {
             "id": "doc:ref10",
             "type": "Reference",
-            "name": "matplotlib/matplotlib, v3.0.2",
-            "schema:codeRepository": "10.5281/zenodo.1482099",
-            "schema:programmingLanguage": "Python"
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.1482099",
+                "name": "matplotlib/matplotlib, v3.0.2",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.1482099",
+                "schema:programmingLanguage": "Python"
+            }
         },  
         {
             "id": "doc:ref11",
@@ -103,16 +119,22 @@
         {
             "id": "doc:ref14",
             "type": "Reference",
-            "name": "scikit-learn/scikit-learn: Scikit-learn 0.20.3",
-            "schema:codeRepository": "10.5281/zenodo.2582066",
-            "schema:programmingLanguage": "Python"
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.2582066",
+                "name": "scikit-learn/scikit-learn: Scikit-learn 0.20.3",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.2582066",
+                "schema:programmingLanguage": "Python"
+            }
         },  
         {
             "id": "doc:ref15",
             "type": "Reference",
-            "name": "mwaskom/seaborn: v0.9.0 (July 2018)",
-            "schema:codeRepository": "10.5281/zenodo.1313201",
-            "schema:programmingLanguage": "Python"
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.1313201",
+                "name": "mwaskom/seaborn: v0.9.0 (July 2018)",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.1313201",
+                "schema:programmingLanguage": "Python"
+            }
         },  
         {
             "id": "doc:ref16",
@@ -121,9 +143,12 @@
         {
             "id": "doc:ref17",
             "type": "Reference",
-            "name": "scipy/scipy, v1.1.0",
-            "schema:codeRepository": "10.5281/zenodo.1241501",
-            "schema:programmingLanguage": "Python"
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.1241501",
+                "name": "scipy/scipy, v1.1.0",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.1241501",
+                "schema:programmingLanguage": "Python"
+            }
         },  
         {
             "id": "doc:ref18",
