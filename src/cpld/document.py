@@ -96,12 +96,12 @@ class Document(object):
             raise MissingHeadElementException()
 
         # Make sure that DC Terms is registered as a schema, and that a conformsTo statement exists in the HTML
-        schema_dct_link = self._soup.html.head.find("link", attrs={"rel": "schema.dct", "href": "http://purl.org/dc/terms/"})
+        schema_dct_link = self._soup.html.head.find("link", attrs={"rel": "schema.dcterms", "href": "http://purl.org/dc/terms/"})
         if schema_dct_link is None:
             raise MissingDCTSchemaDefinitionException()
         
         # Make sure that DC Terms is registered as a schema, and that a conformsTo statement exists in the HTML
-        conforms_to_meta = self._soup.html.head.find("meta", attrs={"name": "dct:conformsTo", "content": "https://cpld.example.com/schema/cpld/"})
+        conforms_to_meta = self._soup.html.head.find("meta", attrs={"name": "dcterms.conformsTo", "content": "https://cpld.example.com/schema/cpld/"})
         if conforms_to_meta is None:
             raise MissingConformsToException()
         

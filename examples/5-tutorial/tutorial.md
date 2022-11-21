@@ -36,13 +36,13 @@ Let's have a look at the basic HTML structure of `example1.html`. To turn this i
    ```html
    <meta name="id" content="https://cpld.example.com/document/3a2b3c" />
    ```
-5. Inside the `<head>` of the HTML file, a `<link>` element defines the `dct` namespace schema as prefix for the `http://purl.org/dc/terms` namespace.
+5. Inside the `<head>` of the HTML file, a `<link>` element defines the `dcterms` namespace schema as prefix for the `http://purl.org/dc/terms` namespace.
     ```html
-    <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+    <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
     ```
 6. This allows us to then use the `dct` prefix tor stating conformance using the `<meta>` element. We use the pattern described by the [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dc-html/) consortium (note the dot-notation, instead of a colon). **NB** We may also choose to adopt RDFa prefixes instead:
    ```html
-   <meta name="dct.conformsTo" content="https://cpld.example.com/schema/cpld/" />
+   <meta name="dcterms.conformsTo" content="https://cpld.example.com/schema/cpld/" />
    ```
    Note that the value of the `content` attribute should point to the official CP/LD namespace. Additional conformance statements may be added, but this one is required.
 7. Finally, we insert a `<link>` element that points to the JSON-LD file that contains the Linked Data that describes this document:
@@ -59,8 +59,8 @@ In code:
 <html xmlns="http://www.w3.org/1999/xhtml" xml:base="https://cpld.example.com/document/3a2b3c">
     <head>
         <meta name="id" content="https://cpld.example.com/document/3a2b3c" />
-        <link rel="schema.dct" href="http://purl.org/dc/terms/" />
-        <meta name="dct.conformsTo" content="https://cpld.example.com/schema/cpld/" />
+        <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+        <meta name="dcterms.conformsTo" content="https://cpld.example.com/schema/cpld/" />
         <link type="application/ld+json" rel="describedby" href="example1.jsonld" />
     </head>
     <body>
@@ -287,8 +287,8 @@ The full example [HTML](tutorial.html) and [JSON-LD](tutorial.jsonld) are:
 <html xmlns="http://www.w3.org/1999/xhtml" xml:base="https://cpld.example.com/document/3a2b3c">
     <head>
         <meta name="id" content="https://cpld.example.com/document/3a2b3c" />
-        <link rel="schema.dct" href="http://purl.org/dc/terms/" />
-        <meta name="dct.conformsTo" content="https://cpld.example.com/schema/cpld/" />
+        <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+        <meta name="dcterms.conformsTo" content="https://cpld.example.com/schema/cpld/" />
         <link type="application/ld+json" rel="describedby" href="example1.jsonld" />
     </head>
     <body>
