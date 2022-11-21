@@ -9,8 +9,6 @@
 - [4. Manifest](#4-manifest)
   - [4.1. Introduction](#41-introduction)
   - [4.2. Requirements](#42-requirements)
-    - [4.2.1. REQUIRED](#421-required)
-    - [4.2.2. RECOMMENDED](#422-recommended)
   - [4.3. Manifest Contexts](#43-manifest-contexts)
   - [4.4. Identifier](#44-identifier)
   - [4.5. Scholarly Article Conformance](#45-scholarly-article-conformance)
@@ -20,31 +18,20 @@
 - [5. Data](#5-data)
   - [5.1. Introduction](#51-introduction)
   - [5.2. Narrative Requirements](#52-narrative-requirements)
-    - [5.2.1. REQUIRED](#521-required)
-    - [5.2.2. RECOMMENDED](#522-recommended)
-    - [5.2.3. Additional requirements](#523-additional-requirements)
   - [5.3. Property and Ontological Requirements](#53-property-and-ontological-requirements)
-    - [5.3.1. REQUIRED](#531-required)
-    - [5.3.2. RECOMMENDED](#532-recommended)
   - [5.4. Data Contexts](#54-data-contexts)
   - [5.5. Identifier](#55-identifier)
   - [5.6. Scholarly Article Conformance](#56-scholarly-article-conformance)
   - [5.7. Publication Type](#57-publication-type)
   - [5.8. Parts](#58-parts)
   - [5.9. Authors](#59-authors)
-    - [5.9.1. REQUIRED](#591-required)
-    - [5.9.2. RECOMMENDED](#592-recommended)
   - [5.10. Citations](#510-citations)
 - [6. Content](#6-content)
   - [6.1. Introduction](#61-introduction)
   - [6.2. Requirements](#62-requirements)
-    - [6.2.1. REQUIRED](#621-required)
   - [6.3. The Header](#63-the-header)
-    - [6.3.1. REQUIRED](#631-required)
-    - [6.3.2. OPTIONAL](#632-optional)
-    - [6.3.3. Template](#633-template)
   - [6.4. Sections](#64-sections)
-  - [References and Citations](#references-and-citations)
+  - [6.5. References and Citations](#65-references-and-citations)
 
 <!-- omit from toc -->
 ## 1. Abstract
@@ -404,7 +391,7 @@ The header of the Scholarly Article encompasses one of the below Narrative entit
 
 #### 6.3.3. Template
 
-The `<header>` template has a fixed structure for the `Title`, `Byline` and `Affiliations`. Additional sections in the `<header>` are captured as `<section>`
+The `<header>` template has a fixed structure for the `Title`, `Byline` and `Affiliations`. Additional sections in the `<header>` are captured as `<section>` (see the section pattern below).
 
 ```
 <header id="...">
@@ -429,6 +416,8 @@ The `<header>` template has a fixed structure for the `Title`, `Byline` and `Aff
 </header>
 ```
 
+Note that it is OPTIONAL to create `href` links between the author names and the affiliation lines, but this is not required as that link exists in the JSON-LD data.
+
 ### 6.4. Sections
 
 The pattern for each section is as follows:
@@ -441,6 +430,6 @@ The pattern for each section is as follows:
   </section>
 ```
 
-### References and Citations
+### 6.5. References and Citations
 
-[...]
+Citations 
