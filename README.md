@@ -6,7 +6,7 @@ This repository contains examples and a test suite for implementations of the Co
 
 The `viewer` directory of this repository contains the source code of the CP/LD Viewer extension to Visual Studio Code. 
 
-Have a look at the <viewer/README.md> for installation and usage instructions. 
+Have a look at the [readme](<viewer/README.md>) for installation and usage instructions. 
 
 ## Test Suite
 
