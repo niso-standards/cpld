@@ -1,0 +1,193 @@
+{
+    "@context": ["cpld-niso-context.jsonld",{ "doc": "https://doi.org/10.1088/0000-0000/IOP1#" } ],
+    "id": "https://doi.org/10.1088/0000-0000/IOP1",
+    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "type": "schema:Article",
+    "schema:title": "Example Data Linking Article",
+    "rights": "IOP Publishing",   
+    "hasPart": [
+        {
+            "id": "doc:title",
+            "type": "Title"
+        },        
+        {
+            "id": "doc:abstract",
+            "type": "Abstract"
+        },
+             
+        {
+            "id": "doc:contrib1",
+            "type": "AuthorName",
+            "mentions": "person:p001"
+        },      
+        {
+            "id": "doc:aff1",
+            "type": "Affiliation",
+            "mentions": "organization:oba882f"
+        },              
+       {
+            "id": "doc:intro",
+            "type": "Introduction"
+        },         
+        {
+            "id": "doc:ack",
+            "type": "Acknowledgment"
+        },
+        {
+            "id": "doc:ref1",
+            "type": "Reference",
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.2155946",
+                "name": "sunpy/sunpy v0.9.5",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.2155946",
+                "schema:programmingLanguage": "Python"
+            }
+        }, 
+        {
+            "id": "doc:ref2",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref3",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref4",
+            "type": "Reference",
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.4080996",
+                "name": "astropy/astropy, v3.1",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.4080996",
+                "schema:programmingLanguage": "Python"
+            }
+        },  
+        {
+            "id": "doc:ref5",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref6",
+            "type": "Reference",
+            "mentions": {
+                "id": "https://doi.org/10.25080/Majora-7b98e3ed-013",
+                "name": "Dask: Parallel Computation with Blocked algorithms and Task Scheduling",
+                "schema:codeRepository": "https://doi.org/10.25080/Majora-7b98e3ed-013",
+                "schema:programmingLanguage": "Python"
+            }
+            
+        },  
+        {
+            "id": "doc:ref7",
+            "type": "Reference",
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.2572850",
+                "name": "sunpy/drms: drms v0.5.6",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.2572850",
+                "schema:programmingLanguage": "Python"
+            }
+        },  
+        {
+            "id": "doc:ref8",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref9",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref10",
+            "type": "Reference",
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.1482099",
+                "name": "matplotlib/matplotlib, v3.0.2",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.1482099",
+                "schema:programmingLanguage": "Python"
+            }
+        },  
+        {
+            "id": "doc:ref11",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref12",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref13",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref14",
+            "type": "Reference",
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.2582066",
+                "name": "scikit-learn/scikit-learn: Scikit-learn 0.20.3",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.2582066",
+                "schema:programmingLanguage": "Python"
+            }
+        },  
+        {
+            "id": "doc:ref15",
+            "type": "Reference",
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.1313201",
+                "name": "mwaskom/seaborn: v0.9.0 (July 2018)",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.1313201",
+                "schema:programmingLanguage": "Python"
+            }
+        },  
+        {
+            "id": "doc:ref16",
+            "type": "Reference"
+        },  
+        {
+            "id": "doc:ref17",
+            "type": "Reference",
+            "mentions": {
+                "id": "https://doi.org/10.5281/zenodo.1241501",
+                "name": "scipy/scipy, v1.1.0",
+                "schema:codeRepository": "https://doi.org/10.5281/zenodo.1241501",
+                "schema:programmingLanguage": "Python"
+            }
+        },  
+        {
+            "id": "doc:ref18",
+            "type": "Reference"
+        }              
+    ],
+    "schema:author": [
+        {
+            "id": "person:p001",
+            "type": "schema:Person",
+            "identifier": {
+                "type": "schema:PropertyValue",
+                "schema:propertyID": "ORCID",
+                "schema:value":  "0000-0000-0000-0001"
+            },
+            "schema:email": "joe.bloggs@email.com",
+            "schema:givenName": "Joe",
+            "initials": "J",
+            "schema:familyName": "Bloggs",            
+            "schema:name": "Joe Bloggs",
+            "schema:affiliation": {
+                "id": "organization:oba882f",
+                "identifier": {
+                    "type": "schema:PropertyValue",
+                    "schema:propertyID": "ECR",
+                    "schema:value":  "ECR-10365836"
+                },
+                "type": "Organization",
+                "schema:name": "National Research"
+            }
+        }       
+    ],
+    "schema:place":[
+        {
+            "id":"doc:fac1",
+            "type":"schema:Place",
+            "schema:name": "Solar Dynamics Observatory: SDO",
+            "schema:url":"https://sdo.gsfc.nasa.gov/",
+            "schema:description":"Since its launch in 2010, NASA's Solar Dynamics Observatory, or SDO, has studied how the Sun creates solar activity and drives space weather -- the dynamic conditions in space that impact the entire solar system, including Earth."
+        }
+    ]
+}
