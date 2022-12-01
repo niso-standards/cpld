@@ -16,6 +16,8 @@ First, you'll have to use `poetry` to install required packages:
 
 `poetry install`
 
+Make sure you have the latest version of html `tidy` installed that supports the `html5` doctype.
+
 Then you can run `pytest` through `poetry`:
 
 `poetry run pytest` (use `-v` or `-vv` to get more verbose output)
