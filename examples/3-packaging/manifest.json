@@ -18,7 +18,8 @@
         "media/css/example3.css",
         {
             "type": "LinkedResource",
-            "url": "example3.html"
+            "url": "example3.html",
+            "encodingFormat": "text/html"
         },{
             "type": "LinkedResource",
             "url": "media/dalliemini_elf_wizard.png",

@@ -3,9 +3,8 @@
     "id": "https://cpld.example.com/document/3a2b3c",
     "conformsTo": "http://cpld.example.com/schema/cpld/",
     "type": "schema:Article",
-    "schema:title": "A description of approachable magicians: An exploratory study, the voice of the elevated elf",
-    "rights": "Elsevier Inc.",
-    "keyword": ["approachable", "magicians", "elevated elf", "pastafari, communication"],
+    "schema:title": "A very simple example to showcase \"packaging\"",
+    "rights": "NISO",
     "hasPart": [
         {
             "id": "doc:h1_1",
