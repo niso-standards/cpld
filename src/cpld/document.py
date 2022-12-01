@@ -101,7 +101,7 @@ class Document(object):
             raise MissingDCTSchemaDefinitionException()
         
         # Make sure that DC Terms is registered as a schema, and that a conformsTo statement exists in the HTML
-        conforms_to_meta = self._soup.html.head.find("meta", attrs={"name": "dcterms.conformsTo", "content": "https://cpld.example.com/schema/cpld/"})
+        conforms_to_meta = self._soup.html.head.find("meta", attrs={"name": "dcterms.conformsTo", "content": "https://w3id.org/cpld/"})
         if conforms_to_meta is None:
             raise MissingConformsToException()
         

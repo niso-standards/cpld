@@ -165,7 +165,7 @@ Usage of properties and entities in the manifest is equivalent to their use in t
 The Scholarly Article data is defined by a set of properties, ontological and narrative entities that describe the essential (meta) data about the article. The properties and ontological entities are are defined by [schema.org](https://schema.org). The narrative entities are defined here.
 
 ### 5.2. Narrative Requirements
-Narrative entity types are defined in the narrative structure vocabulary. They exist in the `nas` namespace (`https://cpld.example.com/publishing/schema/nas/`).
+Narrative entity types are defined in the narrative structure vocabulary. They exist in the `nas` namespace (`https://w3id.org/cpld/article/nas//`).
 
 * Narrative entities MUST be defined in the `doc` namespace, as specified by the CP/LD standard.
 * Narrative entities MUST have a narrative entity type as value for the `type` property.

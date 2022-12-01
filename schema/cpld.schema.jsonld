@@ -60,7 +60,7 @@
         "rdfs:label": "Linked Document",
         "owl:versionInfo": "v1.0",
         "dcat:theme": "Architecture",
-        "vann:preferredNamespaceUri": "https://cpld.example.com/schema/cpld/",
+        "vann:preferredNamespaceUri": "https://w3id.org/cpld/",
         "vann:preferredNamespacePrefix": "cpld",
         "owl:imports": "schema:"
       },
