@@ -1,0 +1,61 @@
+{
+    "@context": [
+        { 
+        "doc": "https://example.com/minimal#",
+        "orcid": "https://orcid.org/",
+        "dbpedia": "https://dbpedia.org/resource/",
+        "schema": "http://schema.org/"
+        },
+        "cpld-niso-context.jsonld", 
+        "includes/anno_slim.jsonld",
+        "http://www.w3.org/ns/anno.jsonld"
+    ],
+    "@graph": [
+      {
+        "id": "doc:section2",
+        "type": "ex:introduction",
+        "schema:about": "dbpedia:Circular_dichroism"
+      },
+      {
+        "id": "https://example.com/minimal",
+        "conformsTo": ["https://namespace.tbd/cpld/", "https://schema.org/"],
+        "schema:hasPart": ["doc:t1", "doc:auth1", "doc:section2", "doc:section1"],
+        "schema:author": "orcid:0000-0002-1584-4316"
+      },
+      {
+        "id": "doc:auth1",
+        "type": "ex:AuthorName"
+      },
+      {
+        "id": "doc:t1",
+        "type": "ex:title"
+      },
+      {
+        "id": "doc:section1",
+        "type": "ex:abstract",
+        "schema:about": "dbpedia:Protein"
+      }
+    ]
+  }
+
+
+
+
+
+  
+{
+  "@context": [
+    "https://w3id.org/cpld/",
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "doc": "https://example.com/cpld#",
+      "ex": "https://example.com/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "doc:section1",
+      "@type": "ex:Introduction"
+    }
+  ]
+}
