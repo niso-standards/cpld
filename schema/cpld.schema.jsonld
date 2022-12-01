@@ -1,11 +1,10 @@
 {
   "@context": {
-      "cpld": "https://cpld.example.com/schema/cpld/",
+      "cpld": "https://w3id.org/cpld/",
       "schema": "https://schema.org/",
       "sh": "http://www.w3.org/ns/shacl#",
       "dct": "http://purl.org/dc/terms/",
       "oa": "http://www.w3.org/ns/oa#",
-      "html": "http://www.w3.org/1999/xhtml#",
 
       "id": "@id",
       "type": "@type",
@@ -45,15 +44,12 @@
       "schema:hasPart": {
         "@type": "@id"
       },
-      "schema:hasAuthor": {
-        "@type": "@id"
-      },
 
       "id": "@id",
       "type": "@type",
       "conformsTo": "dct:conformsTo"
     },
-    "@id": "https://cpld.example.com/schema/cpld/",
+    "@id": "https://w3id.org/cpld/",
     "@graph": [
       {
         "@id": "cpld:",
@@ -72,52 +68,24 @@
         "@id": "dct:conformsTo",
         "rdfs:label": "conformsTo",
         "@type": "owl:DatatypeProperty",
-        "rdfs:description": "Indicates that a document conforms to some specification without assuming an automated mechanism for validating the conformance. For instance, the cpld:conformsTo relation may point at a Web page that describes the specification in natural language.",
+        "rdfs:description": "Indicates that a document conforms to some specification without assuming an automated mechanism for validating the conformance.",
         "rdfs:range": "xsd:anyURI"
       },
       {
-        "@id": "cpld:ArticleShape",
+        "@id": "cpld:WorkShape",
         "@type": "sh:NodeShape",
-        "sh:targetClass": ["schema:Article", "schema:ClinicalOverview"],
+        "rdfs:description": "A Linked Document is a schema:CreativeWork. Every creative work must have a dct:conformsTo relation to this standard, and every part of the work must conform to the cpld:PartShape.",
+        "sh:targetClass": ["schema:CreativeWork"],
         "sh:property": [
           {
           "@type": "sh:PropertyShape",
           "sh:path": "dct:conformsTo",
-          "sh:datatype": "xsd:anyURI"
+          "sh:hasValue": {"@id": "https://w3id.org/cpld/"}
           },
           {
           "@type": "sh:PropertyShape",
           "sh:path": "sh:shapesGraph",
           "sh:nodeKind": "sh:IRI"
-          },
-          {
-          "@type": "sh:PropertyShape",
-          "sh:path": "dct:creator",
-          "sh:minCount": 1,
-          "sh:or": [{"sh:datatype": "xsd:string"}, {"sh:nodeKind": "sh:IRI"}]
-          },
-          {
-          "@type": "sh:PropertyShape",
-          "sh:path": "pav:createdOn",
-          "sh:minCount": 1,
-          "sh:datatype": "xsd:date"
-          },
-          {
-          "@type": "sh:PropertyShape",
-          "sh:path": "schema:copyrightYear",
-          "sh:minCount": 1,
-          "sh:datatype": "xsd:date"
-          },
-          {
-          "@type": "sh:PropertyShape",
-          "sh:path": "schema:copyrightLine",
-          "sh:minCount": 1,
-          "sh:datatype": "xsd:string"
-          },
-          {
-          "@type": "sh:PropertyShape",
-          "sh:path": "schema:hasAuthor",
-          "sh:class": "schema:Person"
           },
           {
           "@type": "sh:PropertyShape",
