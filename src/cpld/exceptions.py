@@ -44,15 +44,15 @@ class MultipleDocumentIRIsException(CPLDException):
     def __init__(self):
         super().__init__("Document specifies more than one '<meta>' element with a value for the 'id' attribute")
 
-class MissingXMLBaseException(CPLDException):
-    """Document does not specify a 'xml:base' attribute on the html root element"""
+class MissingHTMLBaseException(CPLDException):
+    """Document does not specify a 'base' element in the html head"""
     def __init__(self):
-        super().__init__("Document does not specify a 'xml:base' attribute on the html root element")
+        super().__init__("Document does not specify a 'base' element in the html head")
 
-class XMLBaseMismatchException(CPLDException):
-    """Document 'xml:base' attribute does not match the document iri"""
+class HTMLBaseMismatchException(CPLDException):
+    """Document base 'href' attribute does not match the document iri"""
     def __init__(self):
-        super().__init__("Document 'xml:base' attribute does not match the document iri")
+        super().__init__("Document base 'href' attribute does not match the document iri")
 
 class NoJSONLDFoundException(CPLDException):
     """No JSON-LD was found while parsing the Linked Document"""

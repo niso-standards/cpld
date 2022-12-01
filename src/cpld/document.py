@@ -151,11 +151,12 @@ class Document(object):
         if document_iri.endswith("#"):
             raise InvalidHashDocumentIRIException()
 
-        if not "xml:base" in self._soup.html.attrs:
-            raise MissingXMLBaseException()
+        # Make sure that the html base is set.
+        if self._soup.html.head.base is None or not "href" in self._soup.html.head.base.attrs:
+            raise MissingHTMLBaseException()
 
-        if self._soup.html.attrs["xml:base"] != document_iri:
-            raise XMLBaseMismatchException()
+        if self._soup.html.head.base.attrs["href"] != document_iri:
+            raise HTMLBaseMismatchException()
 
         return document_iri
 
