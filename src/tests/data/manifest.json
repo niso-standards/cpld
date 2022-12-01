@@ -120,6 +120,13 @@
         "raises": "InvalidRemoteJSONFoundException"
     },
     {
+        "id": "6f-jsonld-no-type-on-document-id-found-input",
+        "type": "NegativeTest",
+        "description": "Process HTML document where embedded JSON-LD does not provide a type for the Document IRI",
+        "input_file": "6f-jsonld-no-type-on-document-id-found-input.html",
+        "raises": "MissingDocumentTypeException"
+    },
+    {
         "id": "examples-1-basic-article-docid",
         "type": "RetrievalTest",
         "description": "Extract document ID from example basic article",

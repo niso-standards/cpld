@@ -64,7 +64,10 @@ class NoQuadsFoundException(CPLDException):
     def __init__(self):
         super().__init__("No RDF quads resulted from parsing the JSON-LD")
 
-
+class MissingDocumentTypeException(CPLDException):
+    """No type specified for Document IRI"""
+    def __init__(self):
+        super().__init__("No type specified for Document IRI")
 
 class InvalidEmbeddedJSONFoundException(CPLDException):
     """Could not parse script element content into a JSON object"""

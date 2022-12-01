@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 from rfc3987 import parse as rfc3987_parse
 from warnings import warn
 from .definitions import EXAMPLE_IRI_PATTTERN
-from rdflib import ConjunctiveGraph, URIRef, Namespace
+from rdflib import ConjunctiveGraph, URIRef, Namespace, RDF
 import logging
 
 
@@ -211,7 +211,7 @@ class Document(object):
             raise InvalidEmbeddedJSONFoundException() from e
         
         # Load referenced JSON-LD
-        # TODO: Be more restrictive and only find the JSON-LD that has a proper rel="describedby" or rel="preload" or rel="alternate" attribute?
+        # TODO: Be more restrictive and only find the JSON-LD that has a proper rel="preload" attribute?
         for jsonld_tag in self._soup.find_all(
             "link", attrs={"type": "application/ld+json"}
         ):
@@ -259,6 +259,9 @@ class Document(object):
         document_iriref = URIRef(self._document_iri)
         if document_iriref not in self._dataset.all_nodes():
             raise NoStatementsAboutDocumentIRIException()
+
+        if len(list(self._dataset.objects(document_iriref, RDF.type))) == 0 :
+            raise MissingDocumentTypeException()
 
         log.debug(list(self._dataset.namespace_manager.namespaces()))        
 
