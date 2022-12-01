@@ -89,7 +89,7 @@ The basic structure of the JSON-LD file (`example1.jsonld`) needs the following 
     ```
 4. We specify (again) that the document conforms to the CP/LD standard:
     ```json
-    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "conformsTo": "https://w3id.org/cpld/",
     ```
 5. And we specify the type of the document, in this case a [`schema:Article`](https://schema.org/Article):
    ```json
@@ -106,7 +106,7 @@ The complete example:
         { "doc": "https://cpld.example.com/document/1a2b3c#" } 
     ],
     "id": "https://cpld.example.com/document/1a2b3c",
-    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "conformsTo": "https://w3id.org/cpld/",
     "type": "schema:Article"
 }
 ```
@@ -312,7 +312,7 @@ The full example [HTML](tutorial.html) and [JSON-LD](tutorial.jsonld) are:
     "@graph": [
         {
             "id": "https://cpld.example.com/document/1a2b3c",
-            "conformsTo": "http://cpld.example.com/schema/cpld/",
+            "conformsTo": "https://w3id.org/cpld/",
             "type": "schema:Article",
             "author": {
                 "id": "https://orcid.org/0000-0001-7076-9083",

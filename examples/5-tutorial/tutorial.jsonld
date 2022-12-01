@@ -6,7 +6,7 @@
     "@graph": [
         {
             "id": "https://cpld.example.com/document/1a2b3c",
-            "conformsTo": "http://cpld.example.com/schema/cpld/",
+            "conformsTo": "https://w3id.org/cpld/",
             "type": "schema:Article",
             "author": {
                 "id": "https://orcid.org/0000-0001-7076-9083",

@@ -1,7 +1,7 @@
 {
     "@context": ["cpld-niso-context.jsonld",{ "doc": "https://doi.org/10.1088/0000-0000/IOP1#" } ],
     "id": "https://doi.org/10.1088/0000-0000/IOP1",
-    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "conformsTo": "https://w3id.org/cpld/",
     "type": "schema:Article",
     "schema:title": "Example Data Linking Article",
     "rights": "IOP Publishing",   

@@ -1,7 +1,7 @@
 {
     "@context": [{ "@version": 1.1, "doc": "https://cpld.example.com/document/3a2b3c#" }, "cpld-niso-context.jsonld", "includes/anno_slim.jsonld"],
     "id": "https://cpld.example.com/document/3a2b3c",
-    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "conformsTo": "https://w3id.org/cpld/",
     "type": "schema:Article",
     "schema:title": "A very simple example to showcase \"packaging\"",
     "rights": "NISO",
