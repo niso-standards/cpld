@@ -38,7 +38,7 @@
     {
         "id": "3d-html-missing-conformsTo",
         "type": "NegativeTest",
-        "description": "Process HTML document that does not contain dct:conformsTo to the CPLD schema, and fail to initialize a document object",
+        "description": "Process HTML document that does not contain dcterms:conformsTo to the CPLD schema, and fail to initialize a document object",
         "input_file": "3d-html-missing-conformsTo-input.html",
         "raises": "MissingConformsToException"
     },
