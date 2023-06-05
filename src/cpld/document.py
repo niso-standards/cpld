@@ -41,7 +41,7 @@ class Document(object):
 
     @classmethod
     def from_file(cls, filename):
-        base_folder = os.path.dirname(os.path.relpath(path)(filename))
+        base_folder = os.path.dirname(os.path.relpath(filename))
         with open(filename, "rb") as f:
             data = f.read()
 
