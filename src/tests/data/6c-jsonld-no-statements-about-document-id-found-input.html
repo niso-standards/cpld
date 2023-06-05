@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:base="https://cpld.example.com/example/minimal">
+<html>
   <head>
     <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+    <base href="https://cpld.example.com/example/minimal" />
     <meta name="id" content="https://cpld.example.com/example/minimal" />
-    <meta name="dcterms.conformsTo" content="https://cpld.example.com/schema/cpld/" />
+    <meta name="dcterms.conformsTo" content="https://w3id.org/cpld/" />
     <title>Minimal Linked Document</title>
     <script type="application/ld+json">
       {
         "@context": {
-            "cpld": "https://cpld.example.com/schema/cpld/",
+            "cpld": "https://w3id.org/cpld/",
             "schema": "https://schema.org/",
             "sh": "http://www.w3.org/ns/shacl#",
             "dct": "http://purl.org/dc/terms/",
@@ -27,7 +28,7 @@
             "doc": "https://cpld.example.com/example/minimal#"
         },
         "id": "https://data.elsevier.com/and/now/for/something/completely/different",
-        "conformsTo": ["https://cpld.example.com/schema/cpld/", "https://schema.org/"]
+        "conformsTo": ["https://w3id.org/cpld/", "https://schema.org/"]
       }
     </script>
   </head>

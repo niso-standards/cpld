@@ -1,5 +1,5 @@
 [html]
-validator = "tidy" # Can currently only be 'tidy'
+validator = "tidy" # Can currently only be 'tidy', make sure you have a version of tidy installed that supports html5
 
 [html.tidy]
 input-xml = "true"

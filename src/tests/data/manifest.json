@@ -71,18 +71,18 @@
         "raises": "InvalidHashDocumentIRIException"
     },
     {
-        "id": "5a-html-missing-xml-base",
+        "id": "5a-html-missing-base",
         "type": "NegativeTest",
-        "description": "Process HTML document with missing xml:base on html root, and fail to initialize a document object",
-        "input_file": "5a-html-missing-xml-base-input.html",
-        "raises": "MissingXMLBaseException"
+        "description": "Process HTML document with missing base element in the html head, and fail to initialize a document object",
+        "input_file": "5a-html-missing-base-input.html",
+        "raises": "MissingHTMLBaseException"
     },
     {
-        "id": "5b-html-xml-base-mismatch",
+        "id": "5b-html-base-mismatch",
         "type": "NegativeTest",
-        "description": "Process HTML document with xml:base that does not match the document iri, and fail to initialize a document object",
-        "input_file": "5b-html-xml-base-mismatch-input.html",
-        "raises": "XMLBaseMismatchException"
+        "description": "Process HTML document with base href that does not match the document iri, and fail to initialize a document object",
+        "input_file": "5b-html-base-mismatch-input.html",
+        "raises": "HTMLBaseMismatchException"
     },
     {
         "id": "6a-jsonld-no-jsonld-found",
@@ -118,6 +118,13 @@
         "description": "Process HTML document where linked local JSON-LD is not valid JSON and fail",
         "input_file": "6e-jsonld-invalid-linked-local-json-input.html",
         "raises": "InvalidRemoteJSONFoundException"
+    },
+    {
+        "id": "6f-jsonld-no-type-on-document-id-found-input",
+        "type": "NegativeTest",
+        "description": "Process HTML document where embedded JSON-LD does not provide a type for the Document IRI",
+        "input_file": "6f-jsonld-no-type-on-document-id-found-input.html",
+        "raises": "MissingDocumentTypeException"
     },
     {
         "id": "examples-1-basic-article-docid",

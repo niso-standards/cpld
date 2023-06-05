@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 from rfc3987 import parse as rfc3987_parse
 from warnings import warn
 from .definitions import EXAMPLE_IRI_PATTTERN
-from rdflib import ConjunctiveGraph, URIRef, Namespace
+from rdflib import ConjunctiveGraph, URIRef, Namespace, RDF
 import logging
 
 
@@ -101,7 +101,7 @@ class Document(object):
             raise MissingDCTSchemaDefinitionException()
         
         # Make sure that DC Terms is registered as a schema, and that a conformsTo statement exists in the HTML
-        conforms_to_meta = self._soup.html.head.find("meta", attrs={"name": "dcterms.conformsTo", "content": "https://cpld.example.com/schema/cpld/"})
+        conforms_to_meta = self._soup.html.head.find("meta", attrs={"name": "dcterms.conformsTo", "content": "https://w3id.org/cpld/"})
         if conforms_to_meta is None:
             raise MissingConformsToException()
         
@@ -151,11 +151,12 @@ class Document(object):
         if document_iri.endswith("#"):
             raise InvalidHashDocumentIRIException()
 
-        if not "xml:base" in self._soup.html.attrs:
-            raise MissingXMLBaseException()
+        # Make sure that the html base is set.
+        if self._soup.html.head.base is None or not "href" in self._soup.html.head.base.attrs:
+            raise MissingHTMLBaseException()
 
-        if self._soup.html.attrs["xml:base"] != document_iri:
-            raise XMLBaseMismatchException()
+        if self._soup.html.head.base.attrs["href"] != document_iri:
+            raise HTMLBaseMismatchException()
 
         return document_iri
 
@@ -210,7 +211,7 @@ class Document(object):
             raise InvalidEmbeddedJSONFoundException() from e
         
         # Load referenced JSON-LD
-        # TODO: Be more restrictive and only find the JSON-LD that has a proper rel="describedby" or rel="preload" or rel="alternate" attribute?
+        # TODO: Be more restrictive and only find the JSON-LD that has a proper rel="preload" attribute?
         for jsonld_tag in self._soup.find_all(
             "link", attrs={"type": "application/ld+json"}
         ):
@@ -258,6 +259,9 @@ class Document(object):
         document_iriref = URIRef(self._document_iri)
         if document_iriref not in self._dataset.all_nodes():
             raise NoStatementsAboutDocumentIRIException()
+
+        if len(list(self._dataset.objects(document_iriref, RDF.type))) == 0 :
+            raise MissingDocumentTypeException()
 
         log.debug(list(self._dataset.namespace_manager.namespaces()))        
 

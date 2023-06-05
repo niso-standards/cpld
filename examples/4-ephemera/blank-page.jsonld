@@ -13,7 +13,7 @@
         }
     ],
     "id": "https://ieeexplore.ieee.org/document/8375028",
-    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "conformsTo": "https://w3id.org/cpld/",
     "type": "schema:Article",
     "schema:title": "Blank Page",
     "rights": { "@id": "https://ieee.org" },

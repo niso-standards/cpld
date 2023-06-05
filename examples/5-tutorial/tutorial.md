@@ -42,7 +42,7 @@ Let's have a look at the basic HTML structure of `example1.html`. To turn this i
     ```
 6. This allows us to then use the `dct` prefix tor stating conformance using the `<meta>` element. We use the pattern described by the [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dc-html/) consortium (note the dot-notation, instead of a colon). **NB** We may also choose to adopt RDFa prefixes instead:
    ```html
-   <meta name="dcterms.conformsTo" content="https://cpld.example.com/schema/cpld/" />
+   <meta name="dcterms.conformsTo" content="https://w3id.org/cpld/" />
    ```
    Note that the value of the `content` attribute should point to the official CP/LD namespace. Additional conformance statements may be added, but this one is required.
 7. Finally, we insert a `<link>` element that points to the JSON-LD file that contains the Linked Data that describes this document:
@@ -60,7 +60,7 @@ In code:
     <head>
         <meta name="id" content="https://cpld.example.com/document/3a2b3c" />
         <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
-        <meta name="dcterms.conformsTo" content="https://cpld.example.com/schema/cpld/" />
+        <meta name="dcterms.conformsTo" content="https://w3id.org/cpld/" />
         <link type="application/ld+json" rel="describedby" href="example1.jsonld" />
     </head>
     <body>
@@ -89,7 +89,7 @@ The basic structure of the JSON-LD file (`example1.jsonld`) needs the following 
     ```
 4. We specify (again) that the document conforms to the CP/LD standard:
     ```json
-    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "conformsTo": "https://w3id.org/cpld/",
     ```
 5. And we specify the type of the document, in this case a [`schema:Article`](https://schema.org/Article):
    ```json
@@ -106,7 +106,7 @@ The complete example:
         { "doc": "https://cpld.example.com/document/1a2b3c#" } 
     ],
     "id": "https://cpld.example.com/document/1a2b3c",
-    "conformsTo": "http://cpld.example.com/schema/cpld/",
+    "conformsTo": "https://w3id.org/cpld/",
     "type": "schema:Article"
 }
 ```
@@ -288,7 +288,7 @@ The full example [HTML](tutorial.html) and [JSON-LD](tutorial.jsonld) are:
     <head>
         <meta name="id" content="https://cpld.example.com/document/3a2b3c" />
         <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
-        <meta name="dcterms.conformsTo" content="https://cpld.example.com/schema/cpld/" />
+        <meta name="dcterms.conformsTo" content="https://w3id.org/cpld/" />
         <link type="application/ld+json" rel="describedby" href="example1.jsonld" />
     </head>
     <body>
@@ -312,7 +312,7 @@ The full example [HTML](tutorial.html) and [JSON-LD](tutorial.jsonld) are:
     "@graph": [
         {
             "id": "https://cpld.example.com/document/1a2b3c",
-            "conformsTo": "http://cpld.example.com/schema/cpld/",
+            "conformsTo": "https://w3id.org/cpld/",
             "type": "schema:Article",
             "author": {
                 "id": "https://orcid.org/0000-0001-7076-9083",

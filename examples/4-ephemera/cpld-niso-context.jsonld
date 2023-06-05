@@ -15,9 +15,9 @@
         "schema": "https://schema.org/",
         "html": "http://www.w3.org/1999/xhtml#",
 
-        "cpld": "https://cpld.example.com/schema/cpld/",
+        "cpld": "https://w3id.org/cpld/",
 
-        "nas": "https://cpld.example.com/publishing/schema/nas/",
+        "nas": "https://w3id.org/cpld/article/nas//",
         "service": "https://cpld.example.com/research/service/",
 
 
@@ -27,7 +27,7 @@
         "work": "https://cpld.example.com/thing/Work/",
         
 
-        "@vocab": "https://cpld.example.com/schema/cpld/",
+        "@vocab": "https://w3id.org/cpld/",
         
         "sameAs": {
             "@type": "@id",
