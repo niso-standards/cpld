@@ -18,7 +18,7 @@
     "schema:title": "Blank Page",
     "rights": { "@id": "https://ieee.org" },
     "prism:doi": "10.1109/lpt.2018.2838719",
-    "dct:license": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+    "dcterms:license": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
     "keyword": [
         "blank page",
         "ephemera",
@@ -32,18 +32,18 @@
     ],
     "frbr:embodiment": {
         "type": "frbr:DigitalManifestation",
-        "dct:publisher": { "@id": "https://ieee.org" },
-        "dct:format": "application:pdf"
+        "dcterms:publisher": { "@id": "https://ieee.org" },
+        "dcterms:format": "application:pdf"
     },
     "frbr:partOf": {
         "type": "fabio:JournalIssue",
         "prism:issueIdentifier": "11",
         "frbr:embodiment": {
             "type": "fabio:Paperback",
-            "dct:publisher": { "@id": "https://ieee.org" },
+            "dcterms:publisher": { "@id": "https://ieee.org" },
             "frbr:part": {
                 "type": "fabio:PrintObject",
-                "dct:publisher": { "@id": "https://ieee.org" },
+                "dcterms:publisher": { "@id": "https://ieee.org" },
                 "prism:publicationDate": {
                     "@value": "2018-06-07",
                     "type": "xsd:date"
@@ -65,7 +65,7 @@
         {
             "@id": "doi:10.1109/lpt.68",
             "type": "fabio:Journal",
-            "dct:title": "IEEE Photonics Technology Letters",
+            "dcterms:title": "IEEE Photonics Technology Letters",
             "prism:issn": ["1941-0174", "1041-1135"],
             "sameAs": ["https://doi.org/10.1109/lpt.68", "urn:issn:1941-0174", "urn:issn:1041-1135"]
         },

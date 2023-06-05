@@ -3,14 +3,14 @@
       "led": "https://data.elsevier.com/schema/led/",
       "edm": "https://data.elsevier.com/schema/edm/",
       "sh": "http://www.w3.org/ns/shacl#",
-      "dct": "http://purl.org/dc/terms/",
+      "dcterms": "http://purl.org/dc/terms/",
       "oa": "http://www.w3.org/ns/oa#",
       "html": "http://www.w3.org/1999/xhtml#",
 
       "id": "@id",
       "type": "@type",
 
-      "conformsTo": "dct:conformsTo",
+      "conformsTo": "dcterms:conformsTo",
       "shapesGraph": {
         "@id": "sh:shapesGraph",
         "@type": "@id"
@@ -52,7 +52,7 @@
 
       "id": "@id",
       "type": "@type",
-      "conformsTo": "dct:conformsTo"
+      "conformsTo": "dcterms:conformsTo"
     },
     "@id": "https://data.elsevier.com/schema/led/",
     "@graph": [
@@ -60,9 +60,9 @@
         "@id": "led:",
         "@type": "owl:Ontology",
         "dc:creator": "Rinke Hoekstra",
-        "dct:description": "The LED ontology defines constraints for documents that conform to the Content Profiles and Linked Document standard. These constraints are largely expressed against entity types defined in the Enterprise Data Model (EDM)",
-        "dct:created": "2020-02-17",
-        "dct:source": "https://confluence.cbsels.com/display/arch/CR+Content+Profiles+and+Linked+Document+Standard",
+        "dcterms:description": "The LED ontology defines constraints for documents that conform to the Content Profiles and Linked Document standard. These constraints are largely expressed against entity types defined in the Enterprise Data Model (EDM)",
+        "dcterms:created": "2020-02-17",
+        "dcterms:source": "https://confluence.cbsels.com/display/arch/CR+Content+Profiles+and+Linked+Document+Standard",
         "rdfs:label": "Linked Elsevier Document (LED)",
         "owl:versionInfo": "v1.0",
         "dcat:theme": "Architecture",
@@ -71,7 +71,7 @@
         "owl:imports": "edm:"
       },
       {
-        "@id": "dct:conformsTo",
+        "@id": "dcterms:conformsTo",
         "rdfs:label": "conformsTo",
         "@type": "owl:DatatypeProperty",
         "rdfs:description": "Indicates that a document conforms to some specification without assuming an automated mechanism for validating the conformance. For instance, the led:conformsTo relation may point at a Web page that describes the specification in natural language.",
@@ -84,7 +84,7 @@
         "sh:property": [
           {
           "@type": "sh:PropertyShape",
-          "sh:path": "dct:conformsTo",
+          "sh:path": "dcterms:conformsTo",
           "sh:datatype": "xsd:anyURI"
           },
           {

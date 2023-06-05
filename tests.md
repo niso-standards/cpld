@@ -54,7 +54,7 @@ raises: `MissingDCTSchemaDefinitionException`
 ## 3d-html-missing-conformsTo
 ### NegativeTest
 
-*Process HTML document that does not contain dct:conformsTo to the CPLD schema, and fail to initialize a document object*
+*Process HTML document that does not contain dcterms:conformsTo to the CPLD schema, and fail to initialize a document object*
 
     
 
