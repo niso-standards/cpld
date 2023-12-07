@@ -1,4 +1,4 @@
-# Content Profile / Linked Document Standard
+# Content Profile / Linked Document Standard (ANSI/NISO Z39.105-2023)
 
 This repository contains examples and a test suite for implementations of the Content Profile and Linked Document standard
 
